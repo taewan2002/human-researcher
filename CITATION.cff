@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If Human Researcher contributes to your work, you can cite this repository."
+type: software
+title: "Human Researcher"
+abstract: "Seven research task skills and one optional workflow guide for turning research papers into questions, testable ideas, and defensible proposals."
+authors:
+  - family-names: "Cho"
+    given-names: "Taewan"
+repository-code: "https://github.com/taewan2002/human-researcher"
+url: "https://github.com/taewan2002/human-researcher"
+license: MIT
+version: "0.1.0"
+date-released: "2026-10-08"

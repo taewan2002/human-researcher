@@ -1,0 +1,38 @@
+flowchart LR
+    root["문서 랭킹<br/>검토한 접근법"]
+    learned["학습형<br/>점수 함수를 학습"]
+    fixed["고정 규칙형<br/>학습 파라미터 없음"]
+    hybrid["혼합형<br/>학습 점수 + 고정 점수"]
+    text["텍스트만 사용"]
+    joint["텍스트 + 메타데이터<br/>하나의 학습 scoring layer"]
+    meta["메타데이터만 사용"]
+    mixed["텍스트 + 메타데이터<br/>학습·고정 두 분기의 결합"]
+    r1["R1 · Compact Text Ranker / v1"]
+    r2["R2 · Field-Aware Ranker / v2"]
+    r3["R3 · Metadata Rules / v1"]
+    r4["R4 · Mixed Signals / v1"]
+    b["B · 제안한 연구<br/>길이·가용성에 따른 효과 검증"]
+    r5["미분류 · R5 / v3<br/>입력과 학습 방식 미확인"]
+
+    root --- learned & fixed & hybrid
+    learned --- text & joint
+    fixed --- meta
+    hybrid --- mixed
+    text --- r1
+    joint --- r2
+    joint -.- b
+    meta --- r3
+    mixed --- r4
+
+    classDef family fill:#237769,color:#fff,stroke:#237769;
+    classDef leaf fill:#eef3f8,color:#172a34,stroke:#bbccdc;
+    classDef proposed fill:#edf0ff,color:#344cc0,stroke:#344cc0,stroke-dasharray:6 5;
+    classDef unknown fill:#f6efe5,color:#855f22,stroke:#d8c5a7;
+    class learned,fixed,hybrid family;
+    class r1,r2,r3,r4 leaf;
+    class b proposed;
+    class r5 unknown;
+
+%% Lines represent category membership, not citation or chronological influence.
+%% B's dashed line marks a proposed position. R5 is intentionally unconnected.
+%% Sources and split definitions: evidence.md. This is a synthetic example.

@@ -1,0 +1,14 @@
+protocol,method,seed,task,successes,trials,status
+confirm,A,1,t1,4,10,complete
+confirm,A,1,t2,5,10,complete
+confirm,A,1,t3,6,10,complete
+confirm,A,2,t1,5,10,complete
+confirm,A,2,t2,4,10,complete
+confirm,A,2,t3,6,10,complete
+confirm,B,1,t1,5,10,complete
+confirm,B,1,t2,4,10,complete
+confirm,B,1,t3,6,10,complete
+confirm,B,2,t1,5,10,complete
+confirm,B,2,t2,5,10,complete
+confirm,B,2,t3,6,10,complete
+pilot,B,3,t1,10,10,complete

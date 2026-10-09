@@ -1,0 +1,242 @@
+[
+  {
+    "id": "paper-summary",
+    "request": "P01 초록을 세 문장으로 요약해 주세요.",
+    "expected": "read-paper"
+  },
+  {
+    "id": "paper-figure",
+    "request": "이 논문의 Figure 2가 핵심 주장을 어떻게 뒷받침하는지 설명해 주세요.",
+    "expected": "read-paper"
+  },
+  {
+    "id": "paper-topdown",
+    "request": "첨부한 논문 한 편을 큰 그림부터 읽고 깊이 볼 부분을 알려 주세요.",
+    "expected": "read-paper"
+  },
+  {
+    "id": "forward",
+    "request": "이 논문을 인용한 후속 논문을 찾아 주세요.",
+    "expected": "trace-research"
+  },
+  {
+    "id": "survey",
+    "request": "이 질문에 대한 Literature Survey를 문헌 검색부터 해 주세요.",
+    "expected": "trace-research"
+  },
+  {
+    "id": "author-thread",
+    "request": "이 저자의 후속 연구와 연구실의 연구 흐름을 찾아 주세요.",
+    "expected": "trace-research"
+  },
+  {
+    "id": "taxonomy",
+    "request": "이 다섯 논문을 가지가 갈라지는 taxonomy 그림으로 정리해 주세요.",
+    "expected": "map-field"
+  },
+  {
+    "id": "comparison",
+    "request": "첨부한 두 방법을 같은 평가 조건으로 비교할 수 있는지 봐 주세요.",
+    "expected": "map-field"
+  },
+  {
+    "id": "landscape",
+    "request": "이미 모아 둔 문헌에서 내 아이디어의 위치를 보여 주세요.",
+    "expected": "map-field"
+  },
+  {
+    "id": "idea-question",
+    "request": "메타데이터 활용이라는 생각을 구체적인 연구 질문으로 발전시켜 주세요.",
+    "expected": "develop-idea"
+  },
+  {
+    "id": "idea-critique",
+    "request": "이 아이디어의 가장 강한 반론과 신규성 한계를 알려 주세요.",
+    "expected": "develop-idea"
+  },
+  {
+    "id": "idea-choice",
+    "request": "이 두 연구 아이디어 중 무엇을 선택할지 근거를 들어 추천해 주세요.",
+    "expected": "develop-idea"
+  },
+  {
+    "id": "experiment",
+    "request": "이 가설과 대안 설명을 구별할 최소 실험을 설계해 주세요.",
+    "expected": "design-research"
+  },
+  {
+    "id": "method",
+    "request": "선택한 방법의 입력·출력·학습 목표를 구현할 수 있게 구체화해 주세요.",
+    "expected": "design-research"
+  },
+  {
+    "id": "milestones",
+    "request": "이 연구 질문의 4주 계획을 자원과 판단 기준에 맞춰 짜 주세요.",
+    "expected": "design-research"
+  },
+  {
+    "id": "new-proposal",
+    "request": "첨부 논문과 내 메모로 새로운 연구 proposal을 작성하고 완성해 주세요.",
+    "expected": "write-proposal"
+  },
+  {
+    "id": "meeting-brief",
+    "request": "내일 교수님께 이 연구 메모를 보여드릴 건데, 현재 생각과 여쭤볼 쟁점을 한 장으로 정리해 주세요.",
+    "expected": "write-proposal"
+  },
+  {
+    "id": "proposal-poster",
+    "request": "이 아이디어로 한 장짜리 연구 proposal 포스터를 만들어 주세요.",
+    "expected": "write-proposal"
+  },
+  {
+    "id": "venue-new",
+    "request": "이 메모로 목표 학회에 맞는 새 연구계획서를 작성해 주세요.",
+    "expected": "write-proposal"
+  },
+  {
+    "id": "review-only",
+    "request": "기존 proposal을 비평만 해 주세요. 파일은 수정하지 마세요.",
+    "expected": "review-proposal"
+  },
+  {
+    "id": "score",
+    "request": "이 연구계획서 초안을 다섯 기준으로 채점해 주세요.",
+    "expected": "review-proposal"
+  },
+  {
+    "id": "venue-review",
+    "request": "이 초안의 저널 적합성과 잘못 적용한 투고 가정을 검토해 주세요.",
+    "expected": "review-proposal"
+  },
+  {
+    "id": "fix-reviewed",
+    "request": "기존 proposal에서 지적한 평가 설계 문제를 수정하고 다시 검토해 주세요.",
+    "expected": "review-proposal"
+  },
+  {
+    "id": "grammar",
+    "request": "이 이메일 문법만 교정해 주세요.",
+    "expected": "none"
+  },
+  {
+    "id": "execute",
+    "request": "이 학습 코드를 GPU에서 실행하고 실험을 돌려 주세요.",
+    "expected": "none"
+  },
+  {
+    "id": "submit",
+    "request": "완성된 논문을 학회 사이트에 제출해 주세요.",
+    "expected": "none"
+  },
+  {
+    "id": "rebuttal",
+    "request": "리뷰어 의견에 대한 rebuttal을 작성해 주세요.",
+    "expected": "none"
+  },
+  {
+    "id": "ordinary",
+    "request": "회의 참석자들에게 일정을 알려 주는 메일을 보내 주세요.",
+    "expected": "none"
+  },
+  {
+    "id": "code-debug",
+    "request": "이 React 컴포넌트의 렌더링 버그를 수정해 주세요.",
+    "expected": "none"
+  },
+  {
+    "id": "manuscript",
+    "request": "완료한 실험 결과로 학술 논문 본문 전체를 집필해 주세요.",
+    "expected": "none"
+  },
+  {
+    "id": "related-work-section-ko",
+    "request": "첨부한 문헌 메모를 바탕으로 제 proposal의 관련 연구 절을 두 문단으로 써 주세요. 새 논문은 찾지 마세요.",
+    "expected": "write-proposal"
+  },
+  {
+    "id": "related-work-section-en",
+    "request": "I have the sources already. Turn these notes into the related-work section of my research proposal.",
+    "expected": "write-proposal"
+  },
+  {
+    "id": "meeting-natural-en",
+    "request": "I see my supervisor tomorrow. Put these research notes into a short handout with the open decisions I need feedback on.",
+    "expected": "write-proposal"
+  },
+  {
+    "id": "meeting-review-natural",
+    "request": "교수님께 드릴 연구계획 메모를 이미 썼어요. 내용은 고치지 말고 논리가 안 맞는 부분만 찾아 주세요.",
+    "expected": "review-proposal"
+  },
+  {
+    "id": "citers-natural",
+    "request": "이 연구가 나온 뒤 다른 팀들이 어떻게 이어받거나 반박했는지, 실제로 이 논문을 인용한 것 위주로 읽고 싶어요.",
+    "expected": "trace-research"
+  },
+  {
+    "id": "bottleneck-reading",
+    "request": "PDF를 첨부했어요. 저자가 해결하려는 병목과 그걸 뒷받침하는 결과부터 짚어 주세요.",
+    "expected": "read-paper"
+  },
+  {
+    "id": "question-mechanism",
+    "request": "새 모듈을 하나 붙이고 싶은데, 그게 왜 필요한지 아직 설명이 안 돼요. 알아볼 만한 질문과 반론으로 좁혀 주세요.",
+    "expected": "develop-idea"
+  },
+  {
+    "id": "selected-question-test",
+    "request": "연구 질문은 정했고 이제 두 설명 중 어느 것이 맞는지 구별할 대조군과 지표가 필요해요.",
+    "expected": "design-research"
+  },
+  {
+    "id": "family-branches",
+    "request": "논문 목록은 이미 모았어요. 입력과 작동 방식에 따라 가지를 나눠서 각 방법이 어디에 들어가는지 보여 주세요.",
+    "expected": "map-field"
+  },
+  {
+    "id": "copyedit-no-research",
+    "request": "아래 연구 모임 안내문의 오탈자와 띄어쓰기만 고쳐 주세요.",
+    "expected": "none"
+  },
+  {
+    "id": "guide-start",
+    "request": "스킬을 설치했는데 논문 몇 편이랑 메모만 있어요. 어디부터 시작하면 좋을지 순서와 이유를 알려 주세요.",
+    "expected": "using-human-researcher"
+  },
+  {
+    "id": "guide-resume",
+    "request": "Human Researcher로 읽기와 문헌 정리까지 끝냈어요. 어떤 작업을 이어서 하면 될지 지금 자료를 보고 골라 주세요.",
+    "expected": "using-human-researcher"
+  },
+  {
+    "id": "guide-english",
+    "request": "I have this skill collection and a pile of notes. Help me decide what to do next, not write the proposal yet.",
+    "expected": "using-human-researcher"
+  },
+  {
+    "id": "guide-how",
+    "request": "이 일곱 연구 스킬은 어떻게 조합해서 쓰면 되나요?",
+    "expected": "using-human-researcher"
+  },
+  {
+    "id": "guide-not-summary",
+    "request": "Human Researcher를 설치했어요. 이 PDF의 초록만 세 문장으로 요약해 주세요.",
+    "expected": "read-paper"
+  },
+  {
+    "id": "guide-not-draft",
+    "request": "Human Researcher로 첨부 메모를 연구계획서 초안으로 완성해 주세요.",
+    "expected": "write-proposal"
+  },
+  {
+    "id": "guide-not-review",
+    "request": "어디가 문제인지 모르겠어요. 첨부한 연구계획서의 근거와 평가 설계를 비평해 주세요.",
+    "expected": "review-proposal"
+  },
+  {
+    "id": "guide-not-execution",
+    "request": "Human Researcher를 쓸 거예요. 지금 서버에서 이 학습 스크립트를 실행해 주세요.",
+    "expected": "none"
+  }
+]

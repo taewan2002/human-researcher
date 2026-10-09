@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human Researcher · Read Paper"
+  short_description: "Read top-down and anchor claims in evidence"
+  default_prompt: "$read-paper Read this paper top-down and identify the evidence most relevant to my question."

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="1068" viewBox="0 0 1060 1068" role="group" aria-labelledby="vla-tax-title vla-tax-desc">
+<title id="vla-tax-title">VLA taxonomy: 행동 표현과 생성 방식</title>
+<desc id="vla-tax-desc">VLM 기반 VLA를 이산 행동 토큰과 연속 행동으로 분류합니다. 이산 계열에는 차원별 양자화의 RT-2·OpenVLA와 공간 양자화의 SpatialVLA가 있습니다. 연속 계열에는 직접 회귀의 OpenVLA-OFT, diffusion의 TinyVLA·CogACT, flow matching의 π0·SmolVLA가 있습니다. RetoVLA는 SmolVLA와 같은 flow matching 가지의 제안 방법입니다. 선은 범주 소속을 나타냅니다.</desc>
+<style>
+.tax-bg{fill:#fffef9}.tax-text{font-family:-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#202c29}.tax-edge{fill:none;stroke:#9cab9d;stroke-width:1.6;stroke-linejoin:round}.tax-node rect{fill:#fffef9;stroke:#c5d0c4;stroke-width:1.3}.tax-node .tax-label{font-size:16px;font-weight:650}.tax-node .tax-sub{font-size:12px;fill:#56655e}.tax-root rect{fill:#263d33;stroke:#263d33}.tax-root .tax-label,.tax-root .tax-sub{fill:#fffef9}.tax-family rect{fill:#e6eee5;stroke:#9caf9e}.tax-category rect{fill:#f1f3eb}.tax-proposed rect{fill:#e0ecda;stroke:#235c49;stroke-width:2.2;stroke-dasharray:6 4}.tax-proposed .tax-label{fill:#235c49;font-weight:750}.tax-paper .tax-label{text-decoration:underline;text-decoration-color:#9caf9e;text-underline-offset:4px}.tax-link:focus{outline:3px solid #a24d2b;outline-offset:3px}.tax-link:hover rect{stroke:#235c49;stroke-width:2}.tax-column{font-size:11px;fill:#697b6d;letter-spacing:1px}.tax-note{font-size:12px;fill:#56655e}
+</style>
+<rect class="tax-bg" width="1060" height="1068" rx="12"/>
+<g class="tax-text"><text x="28" y="34" font-size="11" letter-spacing="2" fill="#235c49">VLA TAXONOMY / RESEARCH LANDSCAPE</text><text x="28" y="72" font-size="27" font-weight="700">행동을 어떻게 표현하고 생성하나요?</text><text x="28" y="102" class="tax-note">2025-09-24 이전 대표 정책 8편 + RetoVLA 제안 · 모델 이름을 누르면 원문을 볼 수 있습니다.</text>
+<text x="28" y="146" class="tax-column">연구 범위</text><text x="239" y="146" class="tax-column">행동 표현</text><text x="491" y="146" class="tax-column">출력 연산 · 생성 방식</text><text x="732" y="146" class="tax-column">대표 모델 · 확인한 버전</text>
+</g>
+<path class="tax-edge" d="M186,507.0 H212.5 V305.0 H239"/>
+<path class="tax-edge" d="M186,507.0 H212.5 V709.0 H239"/>
+<path class="tax-edge" d="M429,305.0 H460.0 V234.0 H491"/>
+<path class="tax-edge" d="M429,305.0 H460.0 V375.0 H491"/>
+<path class="tax-edge" d="M429,709.0 H460.0 V485.0 H491"/>
+<path class="tax-edge" d="M429,709.0 H460.0 V629.0 H491"/>
+<path class="tax-edge" d="M429,709.0 H460.0 V853.0 H491"/>
+<path class="tax-edge" d="M671,234.0 H701.5 V195.0 H732"/>
+<path class="tax-edge" d="M671,234.0 H701.5 V273.0 H732"/>
+<path class="tax-edge" d="M671,375.0 H701.5 V375.0 H732"/>
+<path class="tax-edge" d="M671,485.0 H701.5 V485.0 H732"/>
+<path class="tax-edge" d="M671,629.0 H701.5 V590.0 H732"/>
+<path class="tax-edge" d="M671,629.0 H701.5 V668.0 H732"/>
+<path class="tax-edge" d="M671,853.0 H701.5 V775.0 H732"/>
+<path class="tax-edge" d="M671,853.0 H701.5 V853.0 H732"/>
+<path class="tax-edge" d="M671,853.0 H701.5 V931.0 H732"/>
+<g class="tax-node tax-text tax-root" data-name="root"><rect x="28" y="463" width="158" height="88" rx="7"/>
+<text class="tax-label" x="107.0" y="503.0" text-anchor="middle">VLM-based VLA</text><text class="tax-sub" x="107.0" y="524.0" text-anchor="middle">시각·언어 → 로봇 행동</text>
+</g>
+<g class="tax-node tax-text tax-family" data-name="discrete"><rect x="239" y="264" width="190" height="82" rx="7"/>
+<text class="tax-label" x="334.0" y="301.0" text-anchor="middle">이산 행동 토큰</text><text class="tax-sub" x="334.0" y="322.0" text-anchor="middle">Discrete actions</text>
+</g>
+<g class="tax-node tax-text tax-family" data-name="continuous"><rect x="239" y="668" width="190" height="82" rx="7"/>
+<text class="tax-label" x="334.0" y="705.0" text-anchor="middle">연속 행동</text><text class="tax-sub" x="334.0" y="726.0" text-anchor="middle">Continuous actions</text>
+</g>
+<g class="tax-node tax-text tax-category" data-name="bins"><rect x="491" y="201" width="180" height="66" rx="7"/>
+<text class="tax-label" x="581.0" y="230.0" text-anchor="middle">행동 차원별 양자화</text><text class="tax-sub" x="581.0" y="251.0" text-anchor="middle">Dimension-wise bins</text>
+</g>
+<g class="tax-node tax-text tax-category" data-name="grids"><rect x="491" y="342" width="180" height="66" rx="7"/>
+<text class="tax-label" x="581.0" y="371.0" text-anchor="middle">공간 구조 기반 양자화</text><text class="tax-sub" x="581.0" y="392.0" text-anchor="middle">Adaptive Action Grids</text>
+</g>
+<g class="tax-node tax-text tax-category" data-name="regression"><rect x="491" y="452" width="180" height="66" rx="7"/>
+<text class="tax-label" x="581.0" y="481.0" text-anchor="middle">직접 회귀</text><text class="tax-sub" x="581.0" y="502.0" text-anchor="middle">Direct regression · L1</text>
+</g>
+<g class="tax-node tax-text tax-category" data-name="diffusion"><rect x="491" y="596" width="180" height="66" rx="7"/>
+<text class="tax-label" x="581.0" y="625.0" text-anchor="middle">Diffusion</text><text class="tax-sub" x="581.0" y="646.0" text-anchor="middle">점진적인 denoising</text>
+</g>
+<g class="tax-node tax-text tax-category" data-name="flow"><rect x="491" y="820" width="180" height="66" rx="7"/>
+<text class="tax-label" x="581.0" y="849.0" text-anchor="middle">Flow matching</text><text class="tax-sub" x="581.0" y="870.0" text-anchor="middle">연속 vector field 학습</text>
+</g>
+<a class="tax-link" href="https://arxiv.org/html/2307.15818v1" data-source="S9" aria-label="RT-2 원문 또는 제안 방법">
+<g class="tax-node tax-text tax-paper" data-name="rt2"><rect x="732" y="163" width="298" height="64" rx="7"/>
+<text class="tax-label" x="749" y="191.0" text-anchor="start">RT-2</text><text class="tax-sub" x="749" y="212.0" text-anchor="start">Brohan et al., 2023 · S9</text>
+</g>
+</a>
+<a class="tax-link" href="https://arxiv.org/html/2406.09246v1" data-source="S10" aria-label="OpenVLA 원문 또는 제안 방법">
+<g class="tax-node tax-text tax-paper" data-name="openvla"><rect x="732" y="241" width="298" height="64" rx="7"/>
+<text class="tax-label" x="749" y="269.0" text-anchor="start">OpenVLA</text><text class="tax-sub" x="749" y="290.0" text-anchor="start">Kim et al., 2024 · S10</text>
+</g>
+</a>
+<a class="tax-link" href="https://arxiv.org/html/2501.15830v1" data-source="S5" aria-label="SpatialVLA 원문 또는 제안 방법">
+<g class="tax-node tax-text tax-paper" data-name="spatial"><rect x="732" y="343" width="298" height="64" rx="7"/>
+<text class="tax-label" x="749" y="371.0" text-anchor="start">SpatialVLA</text><text class="tax-sub" x="749" y="392.0" text-anchor="start">Qu et al., 2025 · S5</text>
+</g>
+</a>
+<a class="tax-link" href="https://arxiv.org/html/2502.19645v2" data-source="S12" aria-label="OpenVLA-OFT 원문 또는 제안 방법">
+<g class="tax-node tax-text tax-paper" data-name="oft"><rect x="732" y="453" width="298" height="64" rx="7"/>
+<text class="tax-label" x="749" y="481.0" text-anchor="start">OpenVLA-OFT</text><text class="tax-sub" x="749" y="502.0" text-anchor="start">Kim et al., 2025 · S12</text>
+</g>
+</a>
+<a class="tax-link" href="https://arxiv.org/html/2409.12514v3" data-source="S4" aria-label="TinyVLA 원문 또는 제안 방법">
+<g class="tax-node tax-text tax-paper" data-name="tiny"><rect x="732" y="558" width="298" height="64" rx="7"/>
+<text class="tax-label" x="749" y="586.0" text-anchor="start">TinyVLA</text><text class="tax-sub" x="749" y="607.0" text-anchor="start">Wen et al., 2024 · S4</text>
+</g>
+</a>
+<a class="tax-link" href="https://arxiv.org/html/2411.19650v1" data-source="S13" aria-label="CogACT 원문 또는 제안 방법">
+<g class="tax-node tax-text tax-paper" data-name="cogact"><rect x="732" y="636" width="298" height="64" rx="7"/>
+<text class="tax-label" x="749" y="664.0" text-anchor="start">CogACT</text><text class="tax-sub" x="749" y="685.0" text-anchor="start">Li et al., 2024 · S13</text>
+</g>
+</a>
+<a class="tax-link" href="https://arxiv.org/html/2410.24164v1" data-source="S11" aria-label="π₀ 원문 또는 제안 방법">
+<g class="tax-node tax-text tax-paper" data-name="pi0"><rect x="732" y="743" width="298" height="64" rx="7"/>
+<text class="tax-label" x="749" y="771.0" text-anchor="start">π₀</text><text class="tax-sub" x="749" y="792.0" text-anchor="start">Black et al., 2024 · S11</text>
+</g>
+</a>
+<a class="tax-link" href="https://arxiv.org/html/2506.01844v1" data-source="S1" aria-label="SmolVLA 원문 또는 제안 방법">
+<g class="tax-node tax-text tax-paper" data-name="smol"><rect x="732" y="821" width="298" height="64" rx="7"/>
+<text class="tax-label" x="749" y="849.0" text-anchor="start">SmolVLA</text><text class="tax-sub" x="749" y="870.0" text-anchor="start">Shukor et al., 2025 · S1</text>
+</g>
+</a>
+<a class="tax-link" href="proposal-reader.html#method" data-proposal="true" aria-label="RetoVLA 원문 또는 제안 방법">
+<g class="tax-node tax-text tax-proposed" data-name="retovla"><rect x="732" y="899" width="298" height="64" rx="7"/>
+<text class="tax-label" x="749" y="927.0" text-anchor="start">RetoVLA</text><text class="tax-sub" x="749" y="948.0" text-anchor="start">제안 방법 · SmolVLA 기반 요약 경로</text>
+<text x="1015" y="923" text-anchor="end" font-family="sans-serif" font-size="10" font-weight="700" fill="#235c49">PROPOSED</text>
+</g>
+</a>
+<path d="M28 996 H1030" stroke="#d4dbd1"/><g class="tax-text"><text x="28" y="1021" class="tax-note">실선 = 범주 소속 · 점선 테두리 = 제안 방법 · 위치와 색은 성능 순위나 새로운 기여를 뜻하지 않습니다.</text><text x="28" y="1044" class="tax-note">본 제안서를 위한 분류입니다. 변형별 출력 방식을 기준으로 하며, 전체 분야를 망라하지 않습니다.</text></g></svg>

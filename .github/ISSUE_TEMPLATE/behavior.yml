@@ -1,0 +1,30 @@
+name: Report a skill behavior problem
+description: Show a concrete request where a skill made the wrong decision.
+title: "[Behavior] "
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      placeholder: e.g. review-proposal
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Request and inputs
+      description: Include a minimal prompt and public or synthetic inputs. Remove private research and credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Actual and expected behavior
+      description: Identify the wrong decision and what evidence should change it.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Agent, model, skill revision, available tools

@@ -1,0 +1,23 @@
+name: Suggest a workflow improvement
+description: Improve one of the seven skills with a concrete use case.
+title: "[Improvement] "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Research task
+      description: What outcome do you need, and which existing skill is closest?
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: Example and proposed change
+      description: Provide a public or synthetic example and explain the decision that should improve.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: How would you evaluate it?
+      description: Describe observable behavior, rather than a preferred phrase or self-score.

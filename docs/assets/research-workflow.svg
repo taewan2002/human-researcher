@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="450" viewBox="0 0 1440 450" role="img" aria-labelledby="title desc">
+  <title id="title">Human Researcher: understand, shape, and defend</title>
+  <desc id="desc">Three groups of skills. Understand: read-paper, trace-research, map-field. Shape: develop-idea, design-research. Defend: write-proposal, review-proposal. Human judgment connects every group. Start at the task you need; this is not a mandatory sequence.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M1 1 6 4 1 7" fill="none" stroke="#738274" stroke-width="1.5"/></marker></defs>
+  <rect width="1440" height="450" rx="20" fill="#f7f5ef"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="60" y="55" font-size="15" letter-spacing="3" fill="#657368">A RESEARCHER'S TOOLKIT</text>
+    <text x="60" y="105" font-size="34" font-weight="700" fill="#26362d">Your question stays at the center.</text>
+    <rect x="1110" y="56" width="270" height="44" rx="22" fill="#e3e9de"/>
+    <text x="1245" y="84" text-anchor="middle" font-size="18" fill="#344b3c">Human judgment, throughout</text>
+    <g stroke="#d8dcd1" fill="#fffefa"><rect x="60" y="144" width="396" height="212" rx="14"/><rect x="522" y="144" width="396" height="212" rx="14"/><rect x="984" y="144" width="396" height="212" rx="14"/></g>
+    <g stroke="#738274" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M472 250H504"/><path d="M934 250H966"/></g>
+    <g fill="#8f6c39" font-size="15" letter-spacing="2"><text x="88" y="181">PAPERS &amp; EVIDENCE</text><text x="550" y="181">QUESTIONS &amp; TESTS</text><text x="1012" y="181">PROPOSAL &amp; REVIEW</text></g>
+    <g fill="#26362d" font-size="29" font-weight="700"><text x="88" y="222">Understand</text><text x="550" y="222">Shape</text><text x="1012" y="222">Defend</text></g>
+    <g fill="#536156" font-size="20"><text x="88" y="269">read-paper</text><text x="88" y="299">trace-research</text><text x="88" y="329">map-field</text><text x="550" y="269">develop-idea</text><text x="550" y="299">design-research</text><text x="1012" y="269">write-proposal</text><text x="1012" y="299">review-proposal</text></g>
+    <text x="720" y="406" text-anchor="middle" font-size="19" fill="#657368">Start where you are. Use only what the question needs.</text>
+  </g>
+</svg>

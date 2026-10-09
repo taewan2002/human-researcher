@@ -1,0 +1,4 @@
+interface:
+  display_name: "Using Human Researcher"
+  short_description: "Choose a useful next step toward a research proposal"
+  default_prompt: "Use $using-human-researcher to choose the next useful research task from my current evidence, question, and constraints."

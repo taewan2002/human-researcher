@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human Researcher · Design Research"
+  short_description: "Connect methods, evaluation, and feasible plans"
+  default_prompt: "$design-research Design a concrete method, discriminating evaluation, and feasible resource plan for this hypothesis."

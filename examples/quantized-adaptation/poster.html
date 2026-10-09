@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>긴 입력에서도 4-bit는 유리할까요? | Human Researcher</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#dfe5e0;color:#192f34;font:16px/1.6 system-ui,sans-serif}
+.toolbar{max-width:1600px;margin:20px auto;padding:0 24px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+a{color:#246b53}button{padding:9px 18px;border:0;border-radius:4px;background:#192f34;color:white;cursor:pointer}
+.poster{width:min(1600px,100%);margin:0 auto 24px;background:#f8f7f2}.poster svg{display:block;width:100%;height:auto}
+@page{size:A3 landscape;margin:0}@media print{.toolbar{display:none}body{background:white}.poster{width:420mm;height:297mm;margin:0}.poster svg{width:100%;height:100%}*{print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+</style></head><body><nav class="toolbar"><button onclick="window.print()">인쇄 / PDF 저장</button><a href="poster.pdf">검수한 PDF</a><a href="proposal.md">전체 proposal</a><a href="sources.md">문헌 근거</a><span>A3 가로 · 연구계획 예제 · 실험 미실행</span></nav><main class="poster">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1131" viewBox="0 0 1600 1131" role="img" aria-labelledby="title desc">
+<title id="title">긴 입력에서도 4-bit는 유리할까요?</title><desc id="desc">LoRA와 QLoRA를 출발점으로 설계한 미실행 연구계획입니다. 같은 설정의 16-bit와 4-bit 고정 기반을 각 길이 안에서 비교하며 메모리, 품질, 처리량과 OOM을 함께 측정합니다.</desc>
+<rect x="0" y="0" width="1600" height="1131" rx="0" fill="#f8f7f2" stroke="none" stroke-width="1.6"/>
+<rect x="0" y="0" width="1600" height="245" rx="0" fill="#192f34" stroke="none" stroke-width="1.6"/>
+<text x="64" y="46" fill="#aacdb6" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">02 / RESEARCH PROPOSAL</text>
+<text x="64" y="129" fill="#ffffff" font-family="'Times New Roman',Times,serif" font-size="65" font-weight="400" text-anchor="start">Same adapters. Different memory.</text>
+<text x="64" y="198" fill="#ffffff" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="37" font-weight="700" text-anchor="start">긴 입력에서도, 4-bit는 유리할까요?</text>
+<text x="1536" y="43" fill="#d7e3da" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="400" text-anchor="end">PLANNED STUDY / NO RESULTS</text>
+<text x="1536" y="199" fill="#d7e3da" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="21" font-weight="400" text-anchor="end">한 모델 · 한 데이터 파이프라인</text>
+<text x="64" y="289" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">01 / EVIDENCE</text>
+<text x="64" y="337" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="29" font-weight="700" text-anchor="start">출발점은 두 논문</text>
+<text x="64" y="392" fill="#192f34" font-family="'Times New Roman',Times,serif" font-size="31" font-weight="400" text-anchor="start">LoRA [1]</text>
+<text x="64" y="425" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="400" text-anchor="start">기반 가중치는 고정합니다.</text>
+<text x="64" y="457" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="400" text-anchor="start">저랭크 갱신을 학습합니다.</text>
+<polyline points="64,482 366,482" fill="none" stroke="#c8d2cb" stroke-width="2" stroke-linejoin="round"/>
+<text x="64" y="521" fill="#192f34" font-family="'Times New Roman',Times,serif" font-size="31" font-weight="400" text-anchor="start">QLoRA [2]</text>
+<text x="64" y="554" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="400" text-anchor="start">고정 기반을 4-bit로 저장하고</text>
+<text x="64" y="586" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="400" text-anchor="start">저랭크 어댑터를 학습합니다.</text>
+<rect x="64" y="613" width="302" height="98" rx="4" fill="#e6eee6" stroke="none" stroke-width="1.6"/>
+<text x="80" y="642" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">HYPOTHESIS / 미검증</text>
+<text x="80" y="671" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="20" font-weight="400" text-anchor="start">긴 입력의 다른 메모리 성분이</text>
+<text x="80" y="698" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="20" font-weight="400" text-anchor="start">상대적 절감 폭을 줄일까요?</text>
+<text x="422" y="289" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">02 / THE CONTROLLED CONTRAST</text>
+<rect x="422" y="319" width="678" height="63" rx="4" fill="#e6eee6" stroke="none" stroke-width="1.6"/>
+<text x="761" y="359" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="25" font-weight="700" text-anchor="middle">동일 체크포인트 · 데이터 · 어댑터 설정</text>
+<polyline points="761,382 761,403 583,403 583,428" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="587.3496553411123,418.9955289764732 583,428 578.6503446588877,418.9955289764732" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="761,403 938,403 938,428" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="942.3496553411123,418.9955289764732 938,428 933.6503446588877,418.9955289764732" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<rect x="422" y="428" width="323" height="194" rx="5" fill="#ffffff" stroke="#466788" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="583" y="466" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="36" font-weight="700" text-anchor="middle">16-bit</text>
+<rect x="446" y="482" width="275" height="59" rx="3" fill="#eaf0f6" stroke="none" stroke-width="1.6"/>
+<text x="583" y="519" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="21" font-weight="700" text-anchor="middle">FROZEN BASE</text>
+<text x="468" y="587" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="31" font-weight="700" text-anchor="start">+</text>
+<rect x="505" y="560" width="216" height="43" rx="3" fill="#e6eee6" stroke="none" stroke-width="1.6"/>
+<text x="613" y="589" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="700" text-anchor="middle">학습하는 어댑터</text>
+<rect x="777" y="428" width="323" height="194" rx="5" fill="#ffffff" stroke="#466788" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="938" y="466" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="36" font-weight="700" text-anchor="middle">4-bit</text>
+<rect x="801" y="482" width="275" height="59" rx="3" fill="#eaf0f6" stroke="none" stroke-width="1.6"/>
+<text x="938" y="519" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="21" font-weight="700" text-anchor="middle">FROZEN BASE</text>
+<text x="823" y="587" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="31" font-weight="700" text-anchor="start">+</text>
+<rect x="860" y="560" width="216" height="43" rx="3" fill="#e6eee6" stroke="none" stroke-width="1.6"/>
+<text x="968" y="589" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="700" text-anchor="middle">학습하는 어댑터</text>
+<polyline points="583,622 583,646 761,646 761,665" fill="none" stroke="#466788" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="765.3496553411123,655.9955289764732 761,665 756.6503446588877,655.9955289764732" fill="none" stroke="#466788" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="938,622 938,646 761,646" fill="none" stroke="#466788" stroke-width="2" stroke-linejoin="round"/>
+<text x="761" y="700" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="25" font-weight="700" text-anchor="middle">각 길이 안에서 두 조건을 비교합니다.</text>
+<text x="1154" y="289" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">03 / KEEP FIXED</text>
+<text x="1154" y="349" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="700" text-anchor="start">01</text>
+<text x="1203" y="349" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="24" font-weight="700" text-anchor="start">모델과 데이터</text>
+<text x="1154" y="385" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="21" font-weight="400" text-anchor="start">체크포인트·토크나이저·분할</text>
+<polyline points="1154,409 1536,409" fill="none" stroke="#c8d2cb" stroke-width="2" stroke-linejoin="round"/>
+<text x="1154" y="460" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="700" text-anchor="start">02</text>
+<text x="1203" y="460" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="24" font-weight="700" text-anchor="start">학습 조건</text>
+<text x="1154" y="496" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="21" font-weight="400" text-anchor="start">어댑터·토큰 예산·선택 규칙</text>
+<polyline points="1154,520 1536,520" fill="none" stroke="#c8d2cb" stroke-width="2" stroke-linejoin="round"/>
+<text x="1154" y="571" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="700" text-anchor="start">03</text>
+<text x="1203" y="571" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="24" font-weight="700" text-anchor="start">실행과 측정</text>
+<text x="1154" y="607" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="21" font-weight="400" text-anchor="start">장비·버전·측정 구간</text>
+<polyline points="1154,631 1536,631" fill="none" stroke="#c8d2cb" stroke-width="2" stroke-linejoin="round"/>
+<text x="1154" y="687" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="20" font-weight="400" text-anchor="start">정밀도별 커널 차이는 기록합니다.</text>
+<polyline points="64,742 1536,742" fill="none" stroke="#192f34" stroke-width="2" stroke-linejoin="round"/>
+<text x="64" y="781" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">04 / EVALUATION PLAN</text>
+<text x="64" y="828" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="31" font-weight="700" text-anchor="start">256 / 512 / 1,024 tokens</text>
+<text x="64" y="863" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="21" font-weight="400" text-anchor="start">후보 길이입니다. 지원 범위와 파일럿 후 확정합니다.</text>
+<text x="64" y="911" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="24" font-weight="700" text-anchor="start">Peak allocated / reserved memory</text>
+<text x="64" y="946" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="400" text-anchor="start">Held-out NLL · 처리량 · OOM도 함께 기록합니다.</text>
+<text x="64" y="982" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="21" font-weight="400" text-anchor="start">품질 허용폭과 반복 수는 독립 확인 전에 정합니다.</text>
+<text x="820" y="781" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">05 / WHAT WOULD CHANGE OUR MIND?</text>
+<rect x="820" y="803" width="4" height="49" rx="0" fill="#246b53" stroke="none" stroke-width="1.6"/>
+<text x="838" y="826" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="24" font-weight="700" text-anchor="start">절감 + 품질 기준 충족</text>
+<text x="838" y="854" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="20" font-weight="400" text-anchor="start">평가한 설정에서 채택을 검토합니다.</text>
+<rect x="820" y="870" width="4" height="49" rx="0" fill="#a55335" stroke="none" stroke-width="1.6"/>
+<text x="838" y="893" fill="#a55335" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="24" font-weight="700" text-anchor="start">절감 + 품질 기준 미달</text>
+<text x="838" y="921" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="20" font-weight="400" text-anchor="start">메모리만으로 유용성을 결론 내리지 않습니다.</text>
+<rect x="820" y="937" width="4" height="49" rx="0" fill="#466788" stroke="none" stroke-width="1.6"/>
+<text x="838" y="960" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="24" font-weight="700" text-anchor="start">불확실 / 한 조건이 OOM</text>
+<text x="838" y="988" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="20" font-weight="400" text-anchor="start">결론을 유보하거나 실행 경계를 보고합니다.</text>
+<polyline points="64,1015 1536,1015" fill="none" stroke="#c8d2cb" stroke-width="2" stroke-linejoin="round"/>
+<text x="64" y="1048" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="20" font-weight="400" text-anchor="start">미정인 입력  /  모델·데이터·장비·품질 허용폭·반복 수  ·  논의 가능한 초안이며 실행 전 확인이 필요합니다.</text>
+<text x="64" y="1083" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="400" text-anchor="start">[1] Hu et al. / LoRA v2, abstract (2021)     [2] Dettmers et al. / QLoRA v1, abstract &amp; §2 (2023)</text>
+<text x="64" y="1110" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="16" font-weight="400" text-anchor="start">점선 = 계획 조건 · 화살표 = 비교 절차 · 도형 크기는 메모리 비율이 아닙니다. 자세한 조건은 proposal.md를 확인해 주세요.</text>
+<a href="https://arxiv.org/abs/2106.09685v2"><rect x="64" y="1066" width="400" height="26" fill="transparent"/></a>
+<a href="https://arxiv.org/pdf/2305.14314v1"><rect x="505" y="1066" width="660" height="26" fill="transparent"/></a>
+<text x="1536" y="1083" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="16" font-weight="400" text-anchor="end">HUMAN RESEARCHER / 02</text>
+</svg>
+</main></body></html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}} · Human Researcher</title>
+<style>
+:root{--paper:#faf9f5;--ink:#172e2b;--muted:#4f6560;--line:#d5dfd8;--green:#215d4d;--soft:#eaf1eb;--blue:#304e88;--amber:#85551a}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif}a{color:var(--green);text-decoration-thickness:1px;text-underline-offset:4px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}a:focus-visible,summary:focus-visible{outline:3px solid var(--blue);outline-offset:5px}.skip{position:absolute;left:12px;top:-80px;padding:10px;background:white}.skip:focus{top:12px;z-index:5}.layout{max-width:1260px;margin:auto;padding:52px 36px 80px;display:grid;grid-template-columns:190px minmax(0,1fr);gap:64px}nav{align-self:start;position:sticky;top:32px;font-size:14px}nav b{display:block;letter-spacing:2px;font-size:12px;margin-bottom:24px}nav a{display:block;padding:7px 0;text-decoration:none}main{min-width:0}header{border-bottom:2px solid var(--ink);padding-bottom:32px}.eyebrow{color:var(--green);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}h1{font-size:clamp(30px,4.1vw,51px);line-height:1.25;letter-spacing:-1.6px;margin:16px 0 22px;word-break:keep-all;overflow-wrap:anywhere}h2{font-size:26px;line-height:1.4;margin:0 0 22px;letter-spacing:-.7px}h3{font-size:19px;line-height:1.5;margin:0 0 12px}p{margin:0 0 16px}.lead{font-size:20px;line-height:1.65;max-width:760px}.muted,figcaption{color:var(--muted);font-size:14px}.badge{display:inline-block;font-size:12px;font-weight:700;line-height:1.5;padding:4px 9px;border:1px dashed var(--blue);color:var(--blue);border-radius:4px}.reported{border-style:solid;color:var(--green)}.unknown{color:var(--amber);border-color:var(--amber)}section{padding:36px 0;border-bottom:1px solid var(--line);scroll-margin-top:24px}.number{display:block;font-size:12px;letter-spacing:2px;color:var(--muted);margin-bottom:10px}.note{background:var(--soft);padding:18px 22px;border-left:3px solid var(--green);margin:20px 0}.note p:last-child{margin-bottom:0}.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}.comparison{border:1px solid var(--line);border-radius:10px;padding:22px;background:white}.comparison.proposed{border:2px solid var(--green);background:var(--soft)}.flow{display:flex;flex-direction:column;align-items:stretch;gap:8px;text-align:center;margin:18px 0}.node{border:1px solid var(--line);padding:10px;background:white;border-radius:5px}.node.change{border:2px solid var(--green);font-weight:700}.arrow{color:var(--muted);line-height:1.1}.flow-label{font-size:13px;color:var(--muted)}figure{margin:0}figcaption{margin:16px 0}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:15px}th,td{border-bottom:1px solid var(--line);padding:14px 12px;text-align:left;vertical-align:top;min-width:130px}th{background:var(--soft);font-weight:650}ul,ol{padding-left:24px}li{margin-bottom:9px}details{margin:20px 0;padding:16px 0;border-top:1px solid var(--line)}summary{cursor:pointer;font-weight:650}details>div{padding-top:16px}.source{background:white;border:1px solid var(--line);border-radius:8px;padding:22px;margin:18px 0;scroll-margin-top:24px}.source:target{outline:2px solid var(--green);outline-offset:3px}.source dl{display:grid;grid-template-columns:100px 1fr;gap:8px 18px;margin-bottom:0;font-size:15px}.source dt{font-weight:650}.source dd{margin:0}.back{font-size:13px}footer{padding:26px 0;color:var(--muted);font-size:13px}
+@media(max-width:800px){.layout{display:block;padding:24px 20px 48px}nav{position:static;display:flex;gap:8px 18px;flex-wrap:wrap;margin-bottom:28px}nav b{width:100%;margin-bottom:0}nav a{padding:3px 0}.two{grid-template-columns:1fr;gap:16px}h1{letter-spacing:-1px}.lead{font-size:18px}section{padding:28px 0}.source dl{display:block}.source dd{margin:4px 0 14px}.comparison,.source{padding:18px}}
+@page{size:A4;margin:16mm}
+@media print{h2,h3,summary,.number{break-after:avoid}html{scroll-behavior:auto}body{background:white;font-size:11pt;line-height:1.55}.layout{display:block;max-width:none;padding:0}nav,.skip,.back{display:none}h1{font-size:28pt}h2{font-size:18pt}h3{font-size:13pt}.lead{font-size:13pt}section{padding:20px 0}.two{grid-template-columns:1fr 1fr;gap:14px}.comparison,.source{break-inside:avoid}.table-wrap{overflow:visible}table{font-size:10pt}th,td{min-width:0;padding:8px}tr{break-inside:avoid}details>div{display:block!important}details::details-content{display:block!important;content-visibility:visible!important;height:auto!important}summary{list-style:none}a{color:inherit}a.external::after{content:" (" attr(href) ")";font-size:9pt;overflow-wrap:anywhere}.source dl{font-size:10pt}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+
+<!-- Component recipe: source card. Copy only needed markup, then remove this comment.
+Use unique IDs for the citation and card. SOURCE_URL must come from supplied material
+or actual tool output. If absent, replace its anchor with missing-link text.
+<p id="cite-S1"><a href="#source-S1">{{SHORT_PAPER_TITLE}}</a></p>
+<article class="source" id="source-S1">
+  <h3>{{PAPER_TITLE}}</h3>
+  <p>{{KNOWN_AUTHORS_YEAR_VERSION}} · <a class="external" href="{{SOURCE_URL}}">{{ORIGINAL_LABEL}}</a></p>
+  <dl><dt>{{USED_FOR_LABEL}}</dt><dd>{{SUPPORTED_CLAIM}}</dd>
+      <dt>{{LOCATION_LABEL}}</dt><dd>{{INSPECTED_LOCATION_AND_ACCESS}}</dd>
+      <dt>{{BOUNDARY_LABEL}}</dt><dd>{{EVIDENCE_LIMIT}}</dd></dl>
+  <a class="back" href="#cite-S1">{{BACK_LABEL}}</a>
+</article>
+-->
+<!-- Component recipe: existing/proposed comparison. Arrows here mean data flow.
+Keep the actual shared input, output, and comparison conditions explicit.
+<figure>
+  <div class="two">
+    <div class="comparison"><h3>{{EXISTING_LABEL}}</h3><div class="flow">
+      <div class="node">{{SHARED_INPUT}}</div><span class="arrow" aria-hidden="true">↓</span>
+      <div class="node">{{EXISTING_MECHANISM}}</div><span class="arrow" aria-hidden="true">↓</span>
+      <div class="node">{{OUTPUT}}</div></div></div>
+    <div class="comparison proposed"><h3>{{PROPOSED_LABEL}}</h3><div class="flow">
+      <div class="node">{{SHARED_INPUT}}</div><span class="arrow" aria-hidden="true">↓</span>
+      <div class="node change">{{PROPOSED_CHANGE}}</div><span class="arrow" aria-hidden="true">↓</span>
+      <div class="node">{{OUTPUT}}</div></div></div>
+  </div><figcaption>{{FLOW_MEANING_AND_FIXED_CONDITIONS}}</figcaption>
+</figure>
+-->
+<!-- Component recipe: status badges. Use explicit status text as well as color.
+<span class="badge reported">{{REPORTED_EVIDENCE_LABEL}}</span>
+<span class="badge">{{PROPOSED_UNRUN_LABEL}}</span>
+<span class="badge unknown">{{UNKNOWN_LABEL}}</span>
+-->
+
+<a class="skip" href="#overview">{{SKIP_LABEL}}</a>
+<div class="layout">
+<nav aria-label="{{NAV_LABEL}}"><b>HUMAN RESEARCHER</b><a href="#overview">{{OVERVIEW_LABEL}}</a><a href="#evidence">{{EVIDENCE_LABEL}}</a><a href="#method">{{METHOD_LABEL}}</a><a href="#evaluation">{{EVALUATION_LABEL}}</a><a href="#feasibility">{{FEASIBILITY_LABEL}}</a><a href="#sources">{{SOURCES_LABEL}}</a></nav>
+<main>
+<header id="overview"><p class="eyebrow">{{DOCUMENT_LABEL}}</p><span class="badge">{{STATUS}}</span><h1>{{QUESTION}}</h1><p class="lead">{{PLAIN_LANGUAGE_IDEA}}</p><p class="muted">{{SCOPE_AND_LIMIT}}</p></header>
+<section id="evidence"><span class="number">01 / {{EVIDENCE_LABEL}}</span><h2>{{NEED_TITLE}}</h2>{{EVIDENCE_BODY}}</section>
+<section id="method"><span class="number">02 / {{METHOD_LABEL}}</span><h2>{{CHANGE_TITLE}}</h2>{{METHOD_BODY}}</section>
+<section id="evaluation"><span class="number">03 / {{EVALUATION_LABEL}}</span><h2>{{TEST_TITLE}}</h2>{{EVALUATION_BODY}}</section>
+<section id="feasibility"><span class="number">04 / {{FEASIBILITY_LABEL}}</span><h2>{{FEASIBILITY_TITLE}}</h2>{{FEASIBILITY_BODY}}</section>
+<section id="sources"><span class="number">05 / {{SOURCES_LABEL}}</span><h2>{{SOURCES_TITLE}}</h2>{{SOURCE_CARDS}}</section>
+<footer>{{FOOTER}}</footer>
+</main>
+</div>
+</body>
+</html>

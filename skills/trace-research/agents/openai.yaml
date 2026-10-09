@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human Researcher · Trace Research"
+  short_description: "Survey literature and trace verified research threads"
+  default_prompt: "$trace-research Survey this question using relevant papers, verified forward citations, and author or lab research threads."

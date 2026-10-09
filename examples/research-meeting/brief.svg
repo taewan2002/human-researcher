@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1060" viewBox="0 0 1600 1060" role="img" aria-labelledby="title desc">
+<title id="title">좋은 미팅은 구체적인 질문에서 시작됩니다.</title><desc id="desc">가상의 도서관 안내 문구 연구를 지도교수 미팅용 초안으로 정리한 예제입니다. 문구의 효과는 미확인이고, 결과 변수와 비교 설계, 모집 가능성을 질문으로 연결합니다.</desc>
+<rect x="0" y="0" width="1600" height="1060" rx="0" fill="#f8f7f2" stroke="none" stroke-width="1.6"/>
+<rect x="0" y="0" width="20" height="1060" rx="0" fill="#466788" stroke="none" stroke-width="1.6"/>
+<text x="64" y="50" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">04 / RESEARCH MEETING BRIEF</text>
+<text x="64" y="124" fill="#192f34" font-family="'Times New Roman',Times,serif" font-size="68" font-weight="400" text-anchor="start">A draft worth discussing.</text>
+<text x="64" y="179" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="31" font-weight="700" text-anchor="start">답이 없는 부분도, 좋은 질문이 될 수 있습니다.</text>
+<text x="1536" y="50" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="18" font-weight="400" text-anchor="end">FICTIONAL EXAMPLE / 가상 연구</text>
+<polyline points="64,221 1536,221" fill="none" stroke="#192f34" stroke-width="2" stroke-linejoin="round"/>
+<text x="64" y="272" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">THE QUESTION</text>
+<text x="64" y="326" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="38" font-weight="700" text-anchor="start">쉬운 서가 안내 문구가</text>
+<text x="64" y="380" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="38" font-weight="700" text-anchor="start">처음 온 이용자의</text>
+<text x="64" y="434" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="38" font-weight="700" text-anchor="start">책 찾기를 도울까요?</text>
+<text x="64" y="492" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="23" font-weight="700" text-anchor="start">연구자가 선택한 방향</text>
+<text x="64" y="531" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="24" font-weight="400" text-anchor="start">안내 문구만 바꿉니다.</text>
+<text x="64" y="567" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="24" font-weight="400" text-anchor="start">서가 위치·글자 크기·배치는 유지합니다.</text>
+<polyline points="64,604 649,604" fill="none" stroke="#c8d2cb" stroke-width="2" stroke-linejoin="round"/>
+<text x="64" y="647" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">WHAT WE KNOW / WHAT WE DO NOT</text>
+<text x="64" y="686" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="400" text-anchor="start">L1에서는 문구와 위치가 함께 바뀌었습니다.</text>
+<text x="64" y="721" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="400" text-anchor="start">참여 집단도 달라 문구의 효과는 분리되지 않습니다.</text>
+<rect x="64" y="757" width="585" height="97" rx="4" fill="#eaf0f6" stroke="none" stroke-width="1.6"/>
+<text x="84" y="795" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="25" font-weight="700" text-anchor="start">현재 상태: 피드백받을 초안</text>
+<text x="84" y="832" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="21" font-weight="400" text-anchor="start">평가 설계·장소·참여자 확보는 미정입니다.</text>
+<polyline points="711,256 711,854" fill="none" stroke="#c8d2cb" stroke-width="2" stroke-linejoin="round"/>
+<text x="760" y="285" fill="#466788" font-family="'Times New Roman',Times,serif" font-size="40" font-weight="400" text-anchor="start">01</text>
+<text x="832" y="278" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="28" font-weight="700" text-anchor="start">무엇을 주된 결과로 볼까요?</text>
+<text x="832" y="321" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="23" font-weight="400" text-anchor="start">제한 시간 내 성공 여부 / 완료 시간</text>
+<text x="832" y="363" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="400" text-anchor="start">답이 바꾸는 것: 과제·실패 처리·분석 기준</text>
+<polyline points="760,414 1536,414" fill="none" stroke="#c8d2cb" stroke-width="2" stroke-linejoin="round"/>
+<text x="760" y="481" fill="#466788" font-family="'Times New Roman',Times,serif" font-size="40" font-weight="400" text-anchor="start">02</text>
+<text x="832" y="474" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="28" font-weight="700" text-anchor="start">문구의 효과를 어떻게 분리할까요?</text>
+<text x="832" y="517" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="23" font-weight="400" text-anchor="start">배치·노출·과제 순서가 만드는 차이</text>
+<text x="832" y="559" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="400" text-anchor="start">답이 바꾸는 것: 배정 방식과 첫 파일럿</text>
+<polyline points="760,610 1536,610" fill="none" stroke="#c8d2cb" stroke-width="2" stroke-linejoin="round"/>
+<text x="760" y="677" fill="#466788" font-family="'Times New Roman',Times,serif" font-size="40" font-weight="400" text-anchor="start">03</text>
+<text x="832" y="670" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="28" font-weight="700" text-anchor="start">이 범위로 첫 검증이 가능할까요?</text>
+<text x="832" y="713" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="23" font-weight="400" text-anchor="start">장소 허가·모집 가능성·관련 기관 요건</text>
+<text x="832" y="755" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="400" text-anchor="start">답이 바꾸는 것: 가능한 규모와 진행 조건</text>
+<rect x="64" y="894" width="1472" height="66" rx="4" fill="#192f34" stroke="none" stroke-width="1.6"/>
+<text x="86" y="934" fill="#b6d0be" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="20" font-weight="700" text-anchor="start">NEXT CHECK</text>
+<text x="268" y="934" fill="#ffffff" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="22" font-weight="400" text-anchor="start">허가·모집 가능성을 확인하고 작은 실행성 파일럿을 설계합니다. / 아직 실행하지 않았습니다.</text>
+<polyline points="64,989 1536,989" fill="none" stroke="#c8d2cb" stroke-width="2" stroke-linejoin="round"/>
+<text x="64" y="1025" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="400" text-anchor="start">자료: 공개된 합성 평가 입력 meeting-notes.md · 실제 미팅·사용자 연구·지도교수 피드백이 아닙니다.</text>
+<text x="1536" y="1025" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="16" font-weight="400" text-anchor="end">HUMAN RESEARCHER / 04</text>
+</svg>

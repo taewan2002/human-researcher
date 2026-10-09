@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-labelledby="title desc">
+<title id="title">PEFT: 무엇을 학습하고 무엇을 고정할까요?</title><desc id="desc">선택한 일곱 논문의 주요 적응 메커니즘을 분류합니다. BitFit, Prefix-Tuning, Adapters, IA3, LoRA, DoRA를 학습 대상에 따라 배치하고 QLoRA의 기반 양자화는 별도 축으로 표시합니다. 분류선은 인용이나 성능 순위가 아닙니다.</desc>
+<rect x="0" y="0" width="1600" height="1100" rx="0" fill="#f8f7f2" stroke="none" stroke-width="1.6"/>
+<text x="64" y="49" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">01 / LITERATURE TAXONOMY</text>
+<text x="64" y="124" fill="#192f34" font-family="'Times New Roman',Times,serif" font-size="67" font-weight="400" text-anchor="start">A field, made legible.</text>
+<text x="64" y="170" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="30" font-weight="700" text-anchor="start">무엇을 학습하고, 무엇을 고정할까요?</text>
+<text x="1536" y="60" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="18" font-weight="400" text-anchor="end">SELECTED PEFT PAPERS</text>
+<text x="1536" y="95" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="18" font-weight="400" text-anchor="end">2019-2024 / 7 SOURCES</text>
+<text x="64" y="221" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">SCOPE</text>
+<text x="390" y="221" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">MAIN INTERVENTION</text>
+<text x="715" y="221" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">LEARNED OBJECT</text>
+<text x="1060" y="221" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">REPRESENTATIVE WORK</text>
+<polyline points="64,238 1536,238" fill="none" stroke="#c8d2cb" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="314,543 346,543 346,300 390,300" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="346,543 390,546" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<polyline points="346,543 346,811 390,811" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<rect x="64" y="483" width="250" height="120" rx="5" fill="#192f34" stroke="none" stroke-width="1.6"/>
+<text x="88" y="532" fill="#ffffff" font-family="'Times New Roman',Times,serif" font-size="42" font-weight="400" text-anchor="start">PEFT</text>
+<text x="88" y="569" fill="#dce7de" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="23" font-weight="400" text-anchor="start">언어 모델 적응</text>
+<rect x="390" y="260" width="250" height="80" rx="5" fill="#f2e8d9" stroke="none" stroke-width="1.6"/>
+<text x="410" y="294" fill="#a55335" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="28" font-weight="700" text-anchor="start">선택해 갱신</text>
+<text x="410" y="322" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="20" font-weight="400" text-anchor="start">기존 파라미터의 일부</text>
+<rect x="390" y="506" width="250" height="80" rx="5" fill="#e6eee6" stroke="none" stroke-width="1.6"/>
+<text x="410" y="540" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="28" font-weight="700" text-anchor="start">추가해 학습</text>
+<text x="410" y="568" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="20" font-weight="400" text-anchor="start">새 모듈·벡터</text>
+<rect x="390" y="771" width="250" height="80" rx="5" fill="#eaf0f6" stroke="none" stroke-width="1.6"/>
+<text x="410" y="805" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="28" font-weight="700" text-anchor="start">다르게 표현</text>
+<text x="410" y="833" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="20" font-weight="400" text-anchor="start">가중치 업데이트</text>
+<polyline points="640,300 677,300 677,300 715,300" fill="none" stroke="#a55335" stroke-width="2" stroke-linejoin="round"/>
+<rect x="715" y="260" width="286" height="80" rx="4" fill="#ffffff" stroke="#c8d2cb" stroke-width="1.6"/>
+<text x="733" y="293" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="23" font-weight="700" text-anchor="start">Bias terms</text>
+<text x="733" y="322" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="400" text-anchor="start">편향 파라미터</text>
+<polyline points="1001,300 1060,300" fill="none" stroke="#a55335" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1060" cy="300" r="4" fill="#a55335"/>
+<text x="1080" y="293" fill="#a55335" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="32" font-weight="700" text-anchor="start">BitFit</text>
+<text x="1080" y="324" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="19" font-weight="400" text-anchor="start">[01] Ben-Zaken et al. / 2021</text>
+<a href="https://arxiv.org/abs/2106.10199v5"><rect x="1070" y="260" width="450" height="80" fill="transparent"/></a>
+<polyline points="640,546 677,546 677,446 715,446" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<rect x="715" y="406" width="286" height="80" rx="4" fill="#ffffff" stroke="#c8d2cb" stroke-width="1.6"/>
+<text x="733" y="439" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="23" font-weight="700" text-anchor="start">Prefix vectors</text>
+<text x="733" y="468" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="400" text-anchor="start">연속적인 prefix</text>
+<polyline points="1001,446 1060,446" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1060" cy="446" r="4" fill="#246b53"/>
+<text x="1080" y="439" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="32" font-weight="700" text-anchor="start">Prefix-Tuning</text>
+<text x="1080" y="470" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="19" font-weight="400" text-anchor="start">[02] Li &amp; Liang / 2021</text>
+<a href="https://arxiv.org/abs/2101.00190v1"><rect x="1070" y="406" width="450" height="80" fill="transparent"/></a>
+<polyline points="640,546 677,546 677,546 715,546" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<rect x="715" y="506" width="286" height="80" rx="4" fill="#ffffff" stroke="#c8d2cb" stroke-width="1.6"/>
+<text x="733" y="539" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="23" font-weight="700" text-anchor="start">Adapter modules</text>
+<text x="733" y="568" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="400" text-anchor="start">추가 적응 모듈</text>
+<polyline points="1001,546 1060,546" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1060" cy="546" r="4" fill="#246b53"/>
+<text x="1080" y="539" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="32" font-weight="700" text-anchor="start">Adapters</text>
+<text x="1080" y="570" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="19" font-weight="400" text-anchor="start">[03] Houlsby et al. / 2019</text>
+<a href="https://arxiv.org/abs/1902.00751v2"><rect x="1070" y="506" width="450" height="80" fill="transparent"/></a>
+<polyline points="640,546 677,546 677,646 715,646" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<rect x="715" y="606" width="286" height="80" rx="4" fill="#ffffff" stroke="#c8d2cb" stroke-width="1.6"/>
+<text x="733" y="639" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="23" font-weight="700" text-anchor="start">Activation scales</text>
+<text x="733" y="668" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="400" text-anchor="start">학습하는 스케일 벡터</text>
+<polyline points="1001,646 1060,646" fill="none" stroke="#246b53" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1060" cy="646" r="4" fill="#246b53"/>
+<text x="1080" y="639" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="32" font-weight="700" text-anchor="start">(IA)³</text>
+<text x="1080" y="670" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="19" font-weight="400" text-anchor="start">[04] Liu et al. / 2022</text>
+<a href="https://arxiv.org/abs/2205.05638v2"><rect x="1070" y="606" width="450" height="80" fill="transparent"/></a>
+<polyline points="640,811 677,811 677,771 715,771" fill="none" stroke="#466788" stroke-width="2" stroke-linejoin="round"/>
+<rect x="715" y="731" width="286" height="80" rx="4" fill="#ffffff" stroke="#c8d2cb" stroke-width="1.6"/>
+<text x="733" y="764" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="23" font-weight="700" text-anchor="start">Low-rank updates</text>
+<text x="733" y="793" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="400" text-anchor="start">고정 기반 + 저랭크 갱신</text>
+<polyline points="1001,771 1060,771" fill="none" stroke="#466788" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1060" cy="771" r="4" fill="#466788"/>
+<text x="1080" y="764" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="32" font-weight="700" text-anchor="start">LoRA</text>
+<text x="1080" y="795" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="19" font-weight="400" text-anchor="start">[05] Hu et al. / 2021</text>
+<a href="https://arxiv.org/abs/2106.09685v2"><rect x="1070" y="731" width="450" height="80" fill="transparent"/></a>
+<polyline points="640,811 677,811 677,871 715,871" fill="none" stroke="#466788" stroke-width="2" stroke-linejoin="round"/>
+<rect x="715" y="831" width="286" height="80" rx="4" fill="#ffffff" stroke="#c8d2cb" stroke-width="1.6"/>
+<text x="733" y="864" fill="#192f34" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="23" font-weight="700" text-anchor="start">Magnitude + direction</text>
+<text x="733" y="893" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="400" text-anchor="start">크기·방향 분해 / 방향에 LoRA</text>
+<polyline points="1001,871 1060,871" fill="none" stroke="#466788" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="1060" cy="871" r="4" fill="#466788"/>
+<text x="1080" y="864" fill="#466788" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="32" font-weight="700" text-anchor="start">DoRA</text>
+<text x="1080" y="895" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="19" font-weight="400" text-anchor="start">[06] Liu et al. / 2024</text>
+<a href="https://arxiv.org/abs/2402.09353v6"><rect x="1070" y="831" width="450" height="80" fill="transparent"/></a>
+<rect x="64" y="943" width="1472" height="68" rx="5" fill="#192f34" stroke="none" stroke-width="1.6"/>
+<text x="84" y="972" fill="#b5d4bd" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="700" text-anchor="start">ANOTHER AXIS</text>
+<text x="84" y="996" fill="#ffffff" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="18" font-weight="400" text-anchor="start">고정 기반의 저장 정밀도</text>
+<text x="357" y="985" fill="#ffffff" font-family="'Times New Roman',Times,serif" font-size="31" font-weight="400" text-anchor="start">QLoRA [07]</text>
+<text x="589" y="985" fill="#ffffff" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="23" font-weight="400" text-anchor="start">4-bit 고정 기반 + LoRA  /  학습 메커니즘과 별도로 보는 선택</text>
+<a href="https://arxiv.org/abs/2305.14314v1"><rect x="350" y="947" width="1120" height="59" fill="transparent"/></a>
+<polyline points="64,1029 1536,1029" fill="none" stroke="#c8d2cb" stroke-width="2" stroke-linejoin="round"/>
+<text x="64" y="1065" fill="#596c6d" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="17" font-weight="400" text-anchor="start">실선 = 분류 관계 · 주요 메커니즘 기준의 잠정 지도 · 성능 순위·전체 분야 조사가 아닙니다.</text>
+<text x="1536" y="1065" fill="#246b53" font-family="NanumSquare,'Apple SD Gothic Neo','Noto Sans KR',sans-serif" font-size="16" font-weight="400" text-anchor="end">HUMAN RESEARCHER / 01</text>
+</svg>

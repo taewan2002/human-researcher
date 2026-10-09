@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human Researcher · Write Proposal"
+  short_description: "Write defensible proposals for the intended audience"
+  default_prompt: "$write-proposal Turn these materials into a defensible proposal with a clear visual argument, and review and correct its gaps."

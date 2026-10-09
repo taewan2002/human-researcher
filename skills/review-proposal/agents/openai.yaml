@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human Researcher · Review Proposal"
+  short_description: "Review and score proposals with traceable evidence"
+  default_prompt: "$review-proposal Assess this proposal with an evidence-linked five-criterion scorecard and prioritized improvements."

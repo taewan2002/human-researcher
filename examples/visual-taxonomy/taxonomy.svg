@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1580" height="1040" viewBox="0 0 1580 1040" role="img" aria-labelledby="title desc">
+<title id="title">문서 랭킹 접근법의 계층형 taxonomy</title>
+<desc id="desc">가상 문헌 다섯 편의 잠정 분류. 문서 랭킹 방법은 점수 구성에 따라 학습형, 고정 규칙형, 혼합형으로 나뉜다. 학습형의 텍스트 분기에 R1, 텍스트와 메타데이터 결합 분기에 R2와 제안 B가 있다. 고정 규칙형의 메타데이터 분기에 R3가 있다. 혼합형의 학습 텍스트와 고정 메타데이터 결합 분기에 R4가 있다. R5는 정보가 없어 트리 밖에 미분류로 둔다. 연결선은 분류 관계이며 인용이나 성능 순위가 아니다.</desc>
+<style>text{font-family:Arial,'Apple SD Gothic Neo','Noto Sans KR',sans-serif;fill:#172a34}.muted{fill:#576a72}.white{fill:white}.teal{fill:#176f68}.blue{fill:#344cc0}.amber{fill:#855f22}a{text-decoration:none}</style>
+<rect width="1580" height="1040" fill="#fcfbf7"/>
+
+<text x="48" y="48" font-size="13" class="teal" font-weight="700" text-anchor="start">HUMAN RESEARCHER / HIERARCHICAL TAXONOMY</text>
+<text x="48" y="107" font-size="43" class="" font-weight="700" text-anchor="start">큰 분류에서, 내 연구가 놓이는 가지까지.</text>
+<text x="48" y="147" font-size="21" class="muted" font-weight="400" text-anchor="start">접근법의 구조를 먼저 읽고, 대표 문헌과 제안한 연구의 위치를 따라간다.</text>
+<text x="48" y="193" font-size="15" class="muted" font-weight="700" text-anchor="start">연구 범위</text>
+<text x="350" y="193" font-size="15" class="muted" font-weight="700" text-anchor="start">점수 구성 방식</text>
+<text x="716" y="193" font-size="15" class="muted" font-weight="700" text-anchor="start">사용하는 입력과 결합</text>
+<text x="1140" y="193" font-size="15" class="muted" font-weight="700" text-anchor="start">대표 문헌 · 제안</text>
+<path d="M268 490 H307 M307 330 V742 M307 330 H350 M307 592 H350 M307 742 H350" fill="none" stroke="#91a5a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M590 330 H650 M650 262 V392 M650 262 H716 M650 392 H716" fill="none" stroke="#91a5a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M590 592 H716" fill="none" stroke="#91a5a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M590 742 H716" fill="none" stroke="#91a5a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M976 262 H1140" fill="none" stroke="#91a5a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M976 392 H1085 M1085 349 V392 M1085 349 H1140" fill="none" stroke="#91a5a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1085 392 V436 H1140" fill="none" stroke="#344cc0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<path d="M976 592 H1140" fill="none" stroke="#91a5a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M976 742 H1140" fill="none" stroke="#91a5a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="48" y="440" width="220" height="100" rx="9" fill="#183a3b" stroke="#183a3b" stroke-width="1.5"/>
+<text x="158" y="480" font-size="27" class="white" font-weight="700" text-anchor="middle">문서 랭킹</text>
+<text x="158" y="512" font-size="19" class="white" font-weight="400" text-anchor="middle">검토한 접근법</text>
+<rect x="350" y="292" width="240" height="76" rx="9" fill="#237769" stroke="#237769" stroke-width="1.5"/>
+<text x="470" y="325" font-size="24" class="white" font-weight="700" text-anchor="middle">학습형</text>
+<text x="470" y="350" font-size="16" class="white" font-weight="400" text-anchor="middle">점수 함수를 학습</text>
+<rect x="350" y="554" width="240" height="76" rx="9" fill="#557b73" stroke="#557b73" stroke-width="1.5"/>
+<text x="470" y="587" font-size="24" class="white" font-weight="700" text-anchor="middle">고정 규칙형</text>
+<text x="470" y="612" font-size="16" class="white" font-weight="400" text-anchor="middle">학습 파라미터 없음</text>
+<rect x="350" y="704" width="240" height="76" rx="9" fill="#72795a" stroke="#72795a" stroke-width="1.5"/>
+<text x="470" y="737" font-size="24" class="white" font-weight="700" text-anchor="middle">혼합형</text>
+<text x="470" y="762" font-size="16" class="white" font-weight="400" text-anchor="middle">학습 점수 + 고정 점수</text>
+<rect x="716" y="227" width="260" height="70" rx="9" fill="#f0f5f1" stroke="#b8ccc2" stroke-width="1.5"/>
+<text x="846" y="256" font-size="21" class="" font-weight="700" text-anchor="middle">텍스트만 사용</text>
+<text x="846" y="280" font-size="15" class="muted" font-weight="400" text-anchor="middle">추론 시 메타데이터 미사용</text>
+<rect x="716" y="357" width="260" height="70" rx="9" fill="#f0f5f1" stroke="#b8ccc2" stroke-width="1.5"/>
+<text x="846" y="386" font-size="21" class="" font-weight="700" text-anchor="middle">텍스트 + 메타데이터</text>
+<text x="846" y="410" font-size="15" class="muted" font-weight="400" text-anchor="middle">하나의 학습 scoring layer</text>
+<rect x="716" y="557" width="260" height="70" rx="9" fill="#f0f5f1" stroke="#b8ccc2" stroke-width="1.5"/>
+<text x="846" y="586" font-size="21" class="" font-weight="700" text-anchor="middle">메타데이터만 사용</text>
+<text x="846" y="610" font-size="15" class="muted" font-weight="400" text-anchor="middle">게시 날짜 · 출처 유형</text>
+<rect x="716" y="707" width="260" height="70" rx="9" fill="#f5f5e9" stroke="#c6cba9" stroke-width="1.5"/>
+<text x="846" y="735" font-size="21" class="" font-weight="700" text-anchor="middle">텍스트 + 메타데이터</text>
+<text x="846" y="760" font-size="13" class="muted" font-weight="400" text-anchor="middle">학습 텍스트 점수 + 고정 메타데이터 점수</text>
+<a href="evidence.md#r1">
+<rect x="1140" y="227" width="392" height="70" rx="9" fill="#eef3f8" stroke="#bbccdc" stroke-width="1.5"/>
+<text x="1160" y="256" font-size="21" class="" font-weight="700" text-anchor="start">R1 · Compact Text Ranker</text>
+<text x="1160" y="280" font-size="15" class="muted" font-weight="400" text-anchor="start">v1 · 텍스트 기반 지도학습</text>
+</a>
+<a href="evidence.md#r2">
+<rect x="1140" y="314" width="392" height="70" rx="9" fill="#eef3f8" stroke="#bbccdc" stroke-width="1.5"/>
+<text x="1160" y="343" font-size="21" class="" font-weight="700" text-anchor="start">R2 · Field-Aware Ranker</text>
+<text x="1160" y="367" font-size="15" class="muted" font-weight="400" text-anchor="start">v2 · 텍스트와 메타데이터로 학습</text>
+</a>
+<a href="evidence.md#b">
+<rect x="1140" y="401" width="392" height="70" rx="9" fill="#edf0ff" stroke="#344cc0" stroke-width="1.5" stroke-dasharray="6 5"/>
+<text x="1160" y="430" font-size="22" class="blue" font-weight="700" text-anchor="start">B · 제안한 연구</text>
+<text x="1160" y="454" font-size="15" class="blue" font-weight="400" text-anchor="start">R2와 같은 가지 / 길이·가용성에 따른 효과 검증</text>
+</a>
+<a href="evidence.md#r3">
+<rect x="1140" y="557" width="392" height="70" rx="9" fill="#eef3f8" stroke="#bbccdc" stroke-width="1.5"/>
+<text x="1160" y="586" font-size="21" class="" font-weight="700" text-anchor="start">R3 · Metadata Rules</text>
+<text x="1160" y="610" font-size="15" class="muted" font-weight="400" text-anchor="start">v1 · 메타데이터 기반 고정 규칙</text>
+</a>
+<a href="evidence.md#r4">
+<rect x="1140" y="707" width="392" height="70" rx="9" fill="#eef3f8" stroke="#bbccdc" stroke-width="1.5"/>
+<text x="1160" y="736" font-size="21" class="" font-weight="700" text-anchor="start">R4 · Mixed Signals</text>
+<text x="1160" y="760" font-size="15" class="muted" font-weight="400" text-anchor="start">v1 · 두 분기를 추론 시 결합</text>
+</a>
+<rect x="48" y="836" width="1484" height="91" rx="9" fill="#f6efe5" stroke="#d8c5a7" stroke-width="1.5"/>
+<text x="72" y="872" font-size="22" class="amber" font-weight="700" text-anchor="start">미분류 · R5</text>
+<text x="276" y="870" font-size="20" class="" font-weight="700" text-anchor="start">Ranker in Practice / v3 · 초록만 접근 가능</text>
+<text x="276" y="901" font-size="18" class="muted" font-weight="400" text-anchor="start">입력과 학습 방식이 보고되지 않아 어느 가지에도 배정하지 않았다. 미확인은 “미사용”을 뜻하지 않는다.</text>
+<path d="M48 957 H1532" fill="none" stroke="#ccd7d8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M48 984 H85" fill="none" stroke="#91a5a5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="97" y="990" font-size="15" class="muted" font-weight="400" text-anchor="start">실선: 분류 관계</text>
+<path d="M287 984 H324" fill="none" stroke="#344cc0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<text x="336" y="990" font-size="15" class="muted" font-weight="400" text-anchor="start">점선: 제안의 잠정 위치</text>
+<text x="610" y="990" font-size="15" class="muted" font-weight="400" text-anchor="start">인용·발전 순서·성능 순위를 나타내지 않는다.</text>
+<text x="1532" y="990" font-size="15" class="muted" font-weight="400" text-anchor="end">출처 ID → evidence.md</text>
+<text x="48" y="1021" font-size="14" class="muted" font-weight="400" text-anchor="start">합성 예제 · 가상 문헌 발췌 5개로 만든 잠정 분류 · 2026.10.07</text>
+<text x="1532" y="1021" font-size="14" class="muted" font-weight="400" text-anchor="end">새 가지나 빈 공간은 신규성의 증거가 아니다.</text>
+</svg>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human Researcher · Map Field"
+  short_description: "Build taxonomy trees and locate research ideas"
+  default_prompt: "$map-field Build a branching taxonomy from approach families to representative methods, show where my idea fits, and preserve justified overlaps, unknowns, and source links."

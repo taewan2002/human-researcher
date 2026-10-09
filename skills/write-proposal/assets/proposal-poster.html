@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}} · Research proposal</title>
+  <style>
+    :root { --ink:#172a34; --muted:#52636b; --line:#cbd6d8; --paper:#fcfbf7;
+      --teal:#176f68; --teal-soft:#eaf3ed; --blue:#344cc0; --blue-soft:#edf0ff; --amber:#855f22; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#e5e9e7; color:var(--ink); font:17px/1.44 Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; }
+    .toolbar { max-width:420mm; margin:20px auto; display:flex; gap:20px; align-items:center; padding:0 16px; font-size:14px; }
+    button { background:var(--ink); color:white; border:0; border-radius:7px; padding:10px 18px; cursor:pointer; font:inherit; }
+    .poster { width:420mm; height:297mm; margin:0 auto 32px; padding:11mm; background:var(--paper);
+      display:grid; grid-template-rows:auto 1fr auto auto; gap:4mm; box-shadow:0 12px 50px #152b3320; }
+    header { display:grid; grid-template-columns:1fr 300px; gap:32px; align-items:end; border-bottom:2px solid var(--ink); padding-bottom:16px; }
+    .eyebrow { font-size:12px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--teal); margin:0 0 8px; }
+    h1 { font-size:48px; line-height:1.12; letter-spacing:-1.8px; font-weight:700; margin:0; max-width:1040px; }
+    .subtitle { font-size:18px; color:var(--muted); margin:10px 0 0; }
+    .header-note { border-left:2px solid var(--line); padding-left:22px; font-size:17px; }
+    .header-note strong { display:block; font-size:24px; margin-bottom:8px; }
+    .main { display:grid; grid-template-columns:.98fr 1.25fr 1fr; gap:22px; min-height:0; }
+    .panel { padding:18px; border:1px solid var(--line); border-radius:12px; min-width:0; }
+    .panel.focus { background:var(--blue-soft); border-color:#c7cfed; }
+    .number { font-size:13px; letter-spacing:1.5px; color:var(--muted); font-weight:700; }
+    h2 { font-size:23px; line-height:1.25; letter-spacing:-.6px; margin:7px 0 12px; }
+    h3 { font-size:17px; margin:12px 0 6px; }
+    p { margin:0 0 10px; }
+    .small { font-size:14px; line-height:1.4; color:var(--muted); }
+    .status { display:inline-block; font-size:11px; letter-spacing:.6px; font-weight:700; padding:3px 8px; border:1px solid currentColor; border-radius:3px; }
+    .reported { color:var(--teal); background:var(--teal-soft); }
+    .proposed { color:var(--blue); border-style:dashed; }
+    .unknown { color:var(--amber); }
+    svg { width:100%; height:auto; display:block; }
+    svg text { font-family:Arial,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; }
+    figure { margin:12px 0; }
+    figure svg { max-height:245px; }
+    figcaption { font-size:13px; color:var(--muted); margin-top:8px; }
+    table { width:100%; border-collapse:collapse; font-size:14px; margin:10px 0; }
+    th,td { text-align:left; padding:7px 6px; border-bottom:1px solid var(--line); vertical-align:top; }
+    th { color:var(--muted); font-size:13px; font-weight:700; }
+    .callout { border-left:3px solid var(--blue); padding:8px 11px; margin-top:12px; background:#ffffff95; font-size:15px; }
+    .decisions { display:grid; gap:7px; margin-top:12px; }
+    .decision { padding:8px 11px; border-left:3px solid var(--teal); background:var(--teal-soft); font-size:14px; }
+    .decision.caution { border-color:var(--amber); background:#f4eee3; }
+    .decision.neutral { border-color:var(--muted); background:#eef0f0; }
+    .bottom { display:grid; grid-template-columns:1.4fr 1fr; gap:28px; border-top:1px solid var(--line); padding-top:14px; }
+    .bottom h2 { font-size:18px; margin:0 0 8px; }
+    .milestones { display:flex; gap:12px; align-items:start; font-size:14px; }
+    .milestone { flex:1; }
+    .milestone b { color:var(--teal); font-size:12px; display:block; margin-bottom:4px; }
+    .chevron { color:var(--muted); padding-top:14px; }
+    .bottom p { font-size:14px; margin-bottom:5px; }
+    footer { display:grid; grid-template-columns:1fr auto; gap:25px; border-top:1px solid var(--line); padding-top:10px; font-size:11px; color:var(--muted); }
+    footer a { color:inherit; text-decoration:underline; text-underline-offset:2px; }
+    .brand { text-align:right; font-size:11px; letter-spacing:1px; white-space:nowrap; }
+    @page { size:A3 landscape; margin:0; }
+    @media print { body { background:white; } .toolbar { display:none; } .poster { margin:0; box-shadow:none; }
+      * { print-color-adjust:exact; -webkit-print-color-adjust:exact; } }
+  </style>
+</head>
+<body>
+  <div class="toolbar"><button onclick="window.print()">Print / save PDF</button><span>Editable HTML + inline SVG · A3 landscape</span></div>
+  <article class="poster" aria-label="One-page research proposal">
+    <header>
+      <div><p class="eyebrow">Research proposal · {{FIELD}}</p><h1>{{QUESTION}}</h1><p class="subtitle">{{SUBTITLE}}</p></div>
+      <aside class="header-note"><strong>{{CLAIM_STATUS}}</strong>{{SCOPE_NOTE}}</aside>
+    </header>
+    <div class="main">
+      <section class="panel" aria-labelledby="landscape-heading">
+        <span class="number">01 / EVIDENCE & POSITION</span>
+        <h2 id="landscape-heading">{{LANDSCAPE_TITLE}}</h2>
+        {{LANDSCAPE}}
+      </section>
+      <section class="panel focus" aria-labelledby="method-heading">
+        <span class="number">02 / THE PROPOSED CHANGE</span>
+        <h2 id="method-heading">{{METHOD_TITLE}}</h2>
+        {{METHOD}}
+      </section>
+      <section class="panel" aria-labelledby="evaluation-heading">
+        <span class="number">03 / THE DISCRIMINATING TEST</span>
+        <h2 id="evaluation-heading">{{EVALUATION_TITLE}}</h2>
+        {{EVALUATION}}
+      </section>
+    </div>
+    <div class="bottom">
+      <section><h2>{{MILESTONES_TITLE}}</h2>{{MILESTONES}}</section>
+      <section><h2>{{LIMITS_TITLE}}</h2>{{LIMITS}}</section>
+    </div>
+    <footer><div>{{SOURCES}}</div><div class="brand">HUMAN RESEARCHER<br>{{DATE_AND_VERSION}}</div></footer>
+  </article>
+</body>
+</html>

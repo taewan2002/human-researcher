@@ -1,0 +1,4 @@
+interface:
+  display_name: "Human Researcher · Develop Idea"
+  short_description: "Refine questions, novelty, and counterarguments"
+  default_prompt: "$develop-idea Sharpen this research question, hypothesis, closest-work comparison, and strongest counterargument."
