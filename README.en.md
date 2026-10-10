@@ -1,29 +1,35 @@
-![Human Researcher — From papers to a proposal you can defend.](docs/assets/human-researcher-hero.png)
+<p align="center"><img src="docs/assets/human-researcher-hero.png" width="760" alt="Human Researcher — From papers to a proposal you can defend." /></p>
 
-<p align="center"><strong>Good papers begin with good questions and a rigorous research plan.</strong><br/>Seven research skills and one optional guide that keep the researcher's question and judgment at the center.</p>
+<p align="center"><strong>Research agent skills for Claude Code and Codex</strong><br/>Literature discovery · Research ideas · Study design · Proposal writing and review</p>
 
 <p align="center">
-  <a href="README.md">한국어</a> ·
+  <a href="#start-here">Install and use</a> ·
+  <a href="#see-an-example-first">See an example</a> ·
   <a href="docs/guide.en.md">User guide</a> ·
-  <a href="examples/README.md">Visual gallery</a> ·
-  <a href="docs/philosophy.en.md">Philosophy</a>
+  <a href="README.md">한국어</a>
 </p>
 
 [![Validate skills](https://github.com/taewan2002/human-researcher/actions/workflows/validate.yml/badge.svg)](https://github.com/taewan2002/human-researcher/actions/workflows/validate.yml)
 [![Release](https://img.shields.io/github/v/release/taewan2002/human-researcher)](https://github.com/taewan2002/human-researcher/releases/tag/v0.1.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-55745a.svg)](LICENSE)
 
-Human Researcher is a collection of skills that helps researchers turn the questions they care about into **testable proposals**. Work with AI to read papers top-down, follow citing work, and develop hypotheses and evaluation plans. Use the skills you need in your existing Codex or Claude Code environment.
+Start with papers, an idea, or a draft to clarify **why a study matters, whether your resources can support it, and what evidence would test the claim**. Develop a research proposal you can explain and defend yourself.
 
-**Understand papers → map the literature → frame your question → design the test → review and revise.**
+| Understand papers and the field | Shape the question and plan | Write and refine the proposal |
+|---|---|---|
+| Paper reading · Forward citations · Literature taxonomy | Idea development · Study design · Resource and timeline estimates | Drafting · Evidence-based review · HTML and poster presentation |
 
-## Why Human Researcher?
+Includes **seven research skills and one optional guide**. Begin with what you have—a paper, a rough idea, or an existing draft—and request only the work you need.
 
-This project starts with **deciding what to study, why it matters, and how to investigate it**. A proposal should explain why the problem deserves attention, what prior work leaves unresolved, and what evidence would justify the claim.
+## See an example first
 
-**Human** means that ownership and responsibility stay with the researcher. AI can propose questions and hypotheses, find evidence and counterarguments, and help design tests. Researchers understand the reasons for their choices, revise their judgments as evidence changes, and determine the direction of their work.
+**A proposal built around the RetoVLA research idea.** Connect 13 prior works and a VLA taxonomy to the proposed method, controlled comparisons, and conditional resource and timeline estimates for one RTX 5090 GPU.
 
-**We aim for a research plan you can explain and defend yourself.** Build a strong proposal by drafting, exposing gaps, and refining it through feedback.
+[![An HTML proposal connecting the RetoVLA research question, proposed method, and evidence](docs/assets/retovla-reader-preview.png)](examples/retovla/README.md)
+
+[Example and request prompt](examples/retovla/README.md) · [Read the proposal](examples/retovla/proposal.md) · [VLA taxonomy](examples/retovla/taxonomy.md) · [More examples](examples/README.md)
+
+This is a curated **proposal before experiments**, built from public material. Improvements remain hypotheses; it is not presented as a one-shot generation or a measured skill-performance outcome. The example is in Korean. To use the HTML reader, download the [project ZIP](https://github.com/taewan2002/human-researcher/archive/refs/tags/v0.1.0.zip), extract it, and open `examples/retovla/proposal-reader.html`.
 
 ## Start here
 
@@ -47,11 +53,7 @@ An idea is enough to begin. Start with `read-paper` for one paper or `review-pro
 
 [Follow the first-use guide →](docs/guide.en.md) · [Installation and updates](docs/installation.md)
 
-If you are unsure where to begin, ask [using-human-researcher](skills/using-human-researcher/SKILL.md) to identify the next useful task from your notes and current bottleneck. Clear requests can go directly to a research skill.
-
-## Start at your current question
-
-![Understand papers and evidence, shape questions and tests, then write and review proposals. Human judgment connects every group; this is not a required sequence.](docs/assets/research-workflow.svg)
+## Research skills at a glance
 
 | What you want to do | Skill | What you receive |
 |---|---|---|
@@ -63,17 +65,23 @@ If you are unsure where to begin, ask [using-human-researcher](skills/using-huma
 | Develop a complete research plan | [write-proposal](skills/write-proposal/SKILL.md) | A proposal shaped for its audience, with a visual explanation |
 | Inspect and improve a draft | [review-proposal](skills/review-proposal/SKILL.md) | Core gaps, evidence-linked scores, venue fit, and requested revisions |
 
-## See the research argument
+The optional guide, [using-human-researcher](skills/using-human-researcher/SKILL.md), helps you choose the next task from your current materials and bottleneck. You do not need to follow every skill in sequence.
 
-**Starting a study from an idea · RetoVLA proposal.** Propose register-based scene summaries for a lightweight VLA, connecting 13 prior works, a VLA taxonomy, hypotheses, controlled comparisons, and conditional estimates for one RTX 5090 GPU.
+## Why Human Researcher?
 
-[![RetoVLA's research question and scene-summary-to-action information path in the HTML reader](docs/assets/retovla-reader-preview.png)](examples/retovla/proposal-reader.html)
+This project starts with **deciding what to study, why it matters, and how to investigate it**. A proposal should explain why the problem deserves attention, what prior work leaves unresolved, and what evidence would justify the claim.
 
-[![A hierarchical taxonomy of eight representative VLA policies by action representation and generation, with the proposed RetoVLA positioned beside SmolVLA](examples/retovla/taxonomy.svg)](examples/retovla/taxonomy.md)
+**Human** means that ownership and responsibility stay with the researcher. AI can propose questions and hypotheses, find evidence and counterarguments, and help design tests. Researchers understand the reasons for their choices, revise their judgments as evidence changes, and determine the direction of their work.
 
-[HTML reader (Korean)](examples/retovla/proposal-reader.html) · [Example and request prompt (Korean)](examples/retovla/README.md) · [Editable Markdown (Korean)](examples/retovla/proposal.md) · [Sources and scope (Korean)](examples/retovla/sources.md)
+**We aim for a research plan you can explain and defend yourself.** Build a strong proposal by drafting, exposing gaps, and refining it through feedback.
 
-Written as a **proposal before experiments**: improvements are hypotheses, and comparison criteria, budgets, and durations are proposed planning assumptions. Completed RetoVLA findings are not used to establish the proposed method’s effect. Download the [project ZIP](https://github.com/taewan2002/human-researcher/archive/refs/tags/v0.1.0.zip), extract it, and open `examples/retovla/proposal-reader.html` in a browser. The preview and taxonomy above are visible directly on GitHub.
+## More research outputs
+
+**The VLA field and the proposed method's position.** Classify eight representative policies by action representation and generation, showing where the RetoVLA idea connects to existing approaches.
+
+[![A VLA taxonomy with the proposed RetoVLA positioned among representative policies](examples/retovla/taxonomy.svg)](examples/retovla/taxonomy.md)
+
+[Classification criteria and evidence](examples/retovla/taxonomy.md) · [Sources and scope](examples/retovla/sources.md)
 
 **01 · Map the field.** Organize seven public PEFT papers by their main adaptation mechanisms, with explicit classification criteria and a separate axis for frozen-base quantization.
 

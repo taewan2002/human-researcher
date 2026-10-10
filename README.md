@@ -1,29 +1,35 @@
-![Human Researcher — From papers to a proposal you can defend.](docs/assets/human-researcher-hero.png)
+<p align="center"><img src="docs/assets/human-researcher-hero.png" width="760" alt="Human Researcher — From papers to a proposal you can defend." /></p>
 
-<p align="center"><strong>좋은 논문은, 좋은 질문과 탄탄한 연구 계획에서 시작됩니다.</strong><br/>연구자의 질문과 판단을 중심에 둔 연구 스킬 7개와 사용 안내 1개.</p>
+<p align="center"><strong>Claude Code·Codex에 설치하는 연구용 에이전트 스킬 모음</strong><br/>논문 탐색 · 연구 아이디어 · 실험 설계 · Proposal 작성과 검토</p>
 
 <p align="center">
-  <a href="README.en.md">English</a> ·
+  <a href="#바로-시작하기">설치하고 사용하기</a> ·
+  <a href="#결과물-먼저-보기">결과물 보기</a> ·
   <a href="docs/guide.md">사용 가이드</a> ·
-  <a href="examples/README.md">시각화 갤러리</a> ·
-  <a href="docs/philosophy.md">연구 철학</a>
+  <a href="README.en.md">English</a>
 </p>
 
 [![Validate skills](https://github.com/taewan2002/human-researcher/actions/workflows/validate.yml/badge.svg)](https://github.com/taewan2002/human-researcher/actions/workflows/validate.yml)
 [![Release](https://img.shields.io/github/v/release/taewan2002/human-researcher)](https://github.com/taewan2002/human-researcher/releases/tag/v0.1.0)
 [![License: MIT](https://img.shields.io/badge/license-MIT-55745a.svg)](LICENSE)
 
-Human Researcher는 연구자가 자신의 문제의식을 **검증 가능한 proposal**로 발전시키도록 돕는 스킬 모음입니다. AI와 함께 논문을 탑다운으로 읽고, 후속 인용을 따라가며, 가설과 검증 계획을 구체화합니다. 기존 Codex·Claude Code 환경에서 필요한 스킬을 골라 사용할 수 있습니다.
+논문·아이디어·초안을 바탕으로 **왜 필요한 연구인지, 주어진 자원으로 풀 수 있는지, 무엇으로 검증할지**를 구체화합니다. 목표는 연구자가 스스로 설명하고 방어할 수 있는 연구계획서(proposal)입니다.
 
-**논문 이해 → 관련 연구의 구조 → 나의 질문 → 검증 계획 → 검토와 수정.**
+| 논문과 분야를 이해합니다 | 연구 질문과 계획을 만듭니다 | Proposal을 작성하고 다듬습니다 |
+|---|---|---|
+| 논문 읽기 · 후속 인용 탐색 · 문헌 분류(taxonomy) | 아이디어 구체화 · 실험 설계 · 자원·일정 견적 | 초안 작성 · 근거 기반 검토 · HTML·포스터 정리 |
 
-## 왜 Human Researcher인가요?
+**연구 스킬 7개와 사용 안내 1개**가 들어 있습니다. 논문 한 편, 막연한 아이디어, 기존 초안 중 지금 가진 자료에서 시작하고 필요한 작업만 요청하시면 됩니다.
 
-이 프로젝트는 좋은 논문을 위한 출발점으로 **무엇을, 왜, 어떻게 연구할지 판단하는 과정**에 집중합니다. 왜 풀어야 하는 문제인지, 기존 연구에서 무엇이 부족한지, 어떤 근거가 있어야 내 주장을 받아들일 수 있는지를 proposal에 담습니다.
+## 결과물 먼저 보기
 
-이름의 **Human**은 연구의 주도권과 책임이 연구자에게 있다는 뜻입니다. AI는 질문과 가설을 제안하고, 근거와 반론을 찾고, 검증을 설계하는 데 함께합니다. 연구자는 선택의 이유를 이해하고, 새로운 근거에 따라 판단을 수정하며, 연구의 방향을 결정합니다.
+**RetoVLA 연구 아이디어를 proposal로 구성한 예제입니다.** 선행연구 13편과 VLA taxonomy에서 출발해 제안 방법, 비교 실험, RTX 5090 1개 기준의 조건부 자원·일정 계획으로 연결합니다.
 
-**우리가 지향하는 결과는 연구자가 스스로 설명하고 방어할 수 있는 연구 계획입니다.** 완성도 높은 proposal을 향해 초안을 쓰고, 빈틈을 드러내고, 피드백으로 다듬어 갑니다.
+[![RetoVLA 연구 질문, 제안 방법과 근거를 함께 읽는 HTML proposal 예제](docs/assets/retovla-reader-preview.png)](examples/retovla/README.md)
+
+[예제와 사용 요청 보기](examples/retovla/README.md) · [Proposal 읽기](examples/retovla/proposal.md) · [VLA taxonomy](examples/retovla/taxonomy.md) · [다른 결과물 보기](examples/README.md)
+
+공개 자료를 바탕으로 검토·편집한 **실험 전 제안서 예제**입니다. 성능 향상은 검증할 가설이며, 한 번의 자동 생성 결과나 스킬 성능 측정치로 제시하지 않습니다. HTML 화면은 [프로젝트 ZIP](https://github.com/taewan2002/human-researcher/archive/refs/tags/v0.1.0.zip)을 내려받아 압축을 푼 뒤 `examples/retovla/proposal-reader.html`을 열면 볼 수 있습니다.
 
 ## 바로 시작하기
 
@@ -47,11 +53,7 @@ write-proposal로 이 논문들과 제 아이디어를 연구 proposal로 발전
 
 [첫 사용부터 결과 검토까지 따라 하기 →](docs/guide.md) · [설치·업데이트 안내](docs/installation.md)
 
-어디서 시작할지 모르겠다면 [using-human-researcher](skills/using-human-researcher/SKILL.md)에 현재 논문·메모와 막힌 지점을 알려 주세요. 필요한 다음 작업과 이유를 제안합니다. 명확한 요청은 해당 연구 스킬로 바로 시작하시면 됩니다.
-
-## 지금 필요한 일부터
-
-![논문과 근거를 이해하고, 질문과 검증을 구체화하고, proposal을 작성·검토하는 세 묶음. 연구자의 판단이 전 과정에 연결되며 필수 실행 순서는 아닙니다.](docs/assets/research-workflow.svg)
+## 연구 스킬 한눈에
 
 | 지금 원하는 일 | 스킬 | 받게 되는 결과 |
 |---|---|---|
@@ -63,17 +65,23 @@ write-proposal로 이 논문들과 제 아이디어를 연구 proposal로 발전
 | 하나의 연구 계획으로 완성하기 | [write-proposal](skills/write-proposal/SKILL.md) | 목표 학회·저널을 반영한 proposal과 시각적 설명 |
 | 초안을 점검하고 개선하기 | [review-proposal](skills/review-proposal/SKILL.md) | 핵심 결함, 근거 기반 점수, 적합성 검토와 요청한 수정 |
 
-## 연구의 논리가 보이는 결과물
+사용 안내 [using-human-researcher](skills/using-human-researcher/SKILL.md)는 현재 자료와 막힌 지점을 바탕으로 다음 작업을 고르도록 돕습니다. 모든 스킬을 순서대로 거칠 필요는 없습니다.
 
-**이 아이디어로 연구를 시작한다면 · RetoVLA proposal.** 경량 VLA에 register 기반 장면 요약을 연결하는 연구를 제안합니다. 선행연구 13편, VLA taxonomy, 가설·비교 실험과 RTX 5090 1개 기준의 조건부 견적까지 한 문서로 보여드립니다.
+## 왜 Human Researcher인가요?
 
-[![RetoVLA의 질문과 장면 요약을 행동 생성에 연결하는 정보 경로를 보여주는 HTML 예제](docs/assets/retovla-reader-preview.png)](examples/retovla/proposal-reader.html)
+이 프로젝트는 좋은 논문을 위한 출발점으로 **무엇을, 왜, 어떻게 연구할지 판단하는 과정**에 집중합니다. 왜 풀어야 하는 문제인지, 기존 연구에서 무엇이 부족한지, 어떤 근거가 있어야 내 주장을 받아들일 수 있는지를 proposal에 담습니다.
 
-[![행동 표현과 생성 방식에 따라 VLA 대표 정책 8편을 분류하고 RetoVLA 제안의 위치를 표시한 taxonomy](examples/retovla/taxonomy.svg)](examples/retovla/taxonomy.md)
+이름의 **Human**은 연구의 주도권과 책임이 연구자에게 있다는 뜻입니다. AI는 질문과 가설을 제안하고, 근거와 반론을 찾고, 검증을 설계하는 데 함께합니다. 연구자는 선택의 이유를 이해하고, 새로운 근거에 따라 판단을 수정하며, 연구의 방향을 결정합니다.
 
-[HTML 읽기 화면](examples/retovla/proposal-reader.html) · [예제 안내와 사용 요청](examples/retovla/README.md) · [수정용 Markdown](examples/retovla/proposal.md) · [선행연구와 작성 범위](examples/retovla/sources.md)
+**우리가 지향하는 결과는 연구자가 스스로 설명하고 방어할 수 있는 연구 계획입니다.** 완성도 높은 proposal을 향해 초안을 쓰고, 빈틈을 드러내고, 피드백으로 다듬어 갑니다.
 
-**실험 전의 연구 제안서 형식**으로 작성했습니다. 성능 향상은 검증할 가설이고, 비교 기준·예산·일정은 제안한 계획입니다. RetoVLA의 완료된 결과로 효과를 미리 결론 내리지 않습니다. [프로젝트 ZIP](https://github.com/taewan2002/human-researcher/archive/refs/tags/v0.1.0.zip)을 내려받아 압축을 푼 뒤 `examples/retovla/proposal-reader.html`을 열면 전체 문서를 브라우저에서 읽을 수 있습니다. GitHub에서는 위 미리보기와 taxonomy를 바로 볼 수 있습니다.
+## 더 다양한 결과물
+
+**VLA 분야의 구조와 제안 위치.** 대표 정책 8편을 행동 표현과 생성 방식으로 분류하고, RetoVLA 아이디어가 어느 접근과 연결되는지 보여줍니다.
+
+[![VLA 대표 정책의 분류와 RetoVLA 제안 위치](examples/retovla/taxonomy.svg)](examples/retovla/taxonomy.md)
+
+[분류 기준과 근거](examples/retovla/taxonomy.md) · [선행연구와 작성 범위](examples/retovla/sources.md)
 
 **01 · 연구의 구조를 그립니다.** 실제 PEFT 논문 7편을 주요 적응 메커니즘으로 분류하고, 각 방법의 위치와 별도로 봐야 할 축을 보여줍니다.
 
